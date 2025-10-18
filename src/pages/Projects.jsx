@@ -15,7 +15,8 @@ const Projects = () => {
   };
 
   if (!category) return <p>Category not found</p>;
-
+  console.log(projects,"......");
+  
   return (
     <div>
       <Breadcrumb
@@ -33,9 +34,9 @@ const Projects = () => {
               <div key={project.id} className="col-lg-4 col-sm-6 pb-6">
                 <div className="project-item">
                   <Link className="project-img" to={`/project-details/${slug}/${project.id}`}>
-                    <img src="/assets/images/project/medium-size/2-1-370x540.jpg" alt={project.title} />
+                    <img src={project?.projectMainImage || "/assets/images/project/medium-size/2-1-370x540.jpg"} alt={project.title} />
                   </Link>
-                  <div className="project-content with-boxshadow">
+                  <div className="project-content with-boxshadow ">
                     <span className="sub-title">
                       {project.location || project.type || "Projects"}
                     </span>

@@ -98,7 +98,6 @@ const ServiceArea = () => {
             ))}
           </Swiper>
 
-          {/* Custom Navigation Buttons */}
           <div className="custom-button-wrap d-none d-md-flex">
             <div className="custom-button-prev">
               <i className="ion-chevron-left"></i>

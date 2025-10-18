@@ -126,19 +126,20 @@ export const projectSections = [
         id: 3,
         title: "Sterling Holidays Resorts",
         subtitle: "Luxury Hospitality Project",
+        projectMainImage: "/assets/images/skyit/Sterling/Sterling5.jpeg",
         description:
           "Construction of itself, because it is pain some proper style design occur are pleasure",
-        breadcrumbImage: "/assets/images/breadcrumb/bg/1.jpg",
+        breadcrumbImage: "/assets/images/skyit/Sterling/Sterling.jpeg",
         subtitleDescription:
           "Provide the best Construction services for our client with expert team, modern equipment, and quality materials",
         summary:
           "This project involved multi-location resort development and construction across India.",
         images: [
-          "/assets/images/project-detail/1-1-370x500.jpg",
-          "/assets/images/project-detail/1-2-226x245.jpg",
-          "/assets/images/project-detail/1-3-222x245.jpg",
-          "/assets/images/project-detail/1-4-264x245.jpg",
-          "/assets/images/project-detail/1-5-183x245.jpg",
+          "/assets/images/skyit/Sterling/Sterling.jpeg",
+          "/assets/images/skyit/Sterling/Sterling1.jpeg",
+          "/assets/images/skyit/Sterling/Sterling2.jpeg",
+          "/assets/images/skyit/Sterling/Sterling3.jpeg",
+          "/assets/images/skyit/Sterling/Sterling4.jpeg",
         ],
         features: [
           "Resort development across multiple locations",
@@ -344,11 +345,70 @@ export const projectSections = [
       {
         id: 23,
         title: "Ananta Aspire",
-        location: "Zirakpur, Punjab",
-        scope: "Club house finishing work",
-        features: "Complete finishing works and comprehensive beautification",
-        collaboration: "Guided by Ananta Aspire team",
-        status: "Ongoing",
+        subtitle: "Club House Finishing Project",
+        description:
+          "Construction of itself, because it is pain some proper style design occur are pleasure",
+        breadcrumbImage: "/assets/images/skyit/ananta/ananta.jpeg",
+        projectMainImage: "/assets/images/skyit/ananta/ananta19.jpg",
+        subtitleDescription:
+          "Provide the best Construction services for our client with expert team, modern equipment, and quality materials",
+        summary:
+          "This project involves club house finishing work with complete beautification managed in collaboration with the Ananta Aspire team.",
+        images: [
+          "/assets/images/skyit/ananta/ananta.jpeg",
+          "/assets/images/skyit/ananta/ananta1.jpeg",
+          "/assets/images/skyit/ananta/ananta2.jpeg",
+          "/assets/images/skyit/ananta/ananta3.jpeg",
+          "/assets/images/skyit/ananta/ananta4.jpeg",
+          "/assets/images/skyit/ananta/ananta5.jpeg",
+          "/assets/images/skyit/ananta/ananta6.jpeg",
+          "/assets/images/skyit/ananta/ananta7.jpeg",
+          "/assets/images/skyit/ananta/ananta8.jpeg",
+          "/assets/images/skyit/ananta/ananta9.jpeg",
+          "/assets/images/skyit/ananta/ananta10.jpeg",
+          "/assets/images/skyit/ananta/ananta11.jpeg",
+          "/assets/images/skyit/ananta/ananta12.jpeg",
+          "/assets/images/skyit/ananta/ananta13.jpeg",
+          "/assets/images/skyit/ananta/ananta14.jpeg",
+          "/assets/images/skyit/ananta/ananta15.jpeg",
+          "/assets/images/skyit/ananta/ananta16.jpeg",
+          "/assets/images/skyit/ananta/ananta17.jpeg",
+          "/assets/images/skyit/ananta/ananta18.jpeg",
+        ],
+        features: [
+          "Complete finishing works",
+          "Comprehensive beautification",
+          "Guided by Ananta Aspire team",
+        ],
+        overview:
+          "Ongoing club house finishing project executed with precision, quality workmanship, and close collaboration.",
+        overviewList: [
+          [
+            "Expert planning and design",
+            "Use of high-quality materials",
+            "Strict quality control measures",
+          ],
+          [
+            "Efficient project execution",
+            "Client-focused service",
+            "Timely delivery with precision",
+          ],
+        ],
+        info: {
+          "Client name": "Ananta Aspire Team",
+          Location: "Zirakpur, Punjab",
+          Area: "N/A",
+          Budget: "N/A",
+          Architect: "N/A",
+          Contractor: "Gaurav Sharma Constructions",
+          "Start date": "N/A",
+          "Delivery date": "Ongoing",
+        },
+        brochures: [
+          { name: "Brochure.PDF", url: "#" },
+          { name: "Brochure.DOC", url: "#" },
+        ],
+        sidebarBanner: "/assets/images/sidebar/3-270x369.jpg",
       },
       {
         id: 24,

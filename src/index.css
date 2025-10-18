@@ -19671,6 +19671,7 @@ input[type=checkbox]:checked+label:after {
 
 .project-img img {
     width: 100%;
+    height: 525px;
 }
 
 .project-content {
@@ -22037,4 +22038,40 @@ input[type=checkbox]:checked+label:after {
 }
 .brand-row{
     gap: 5rem !important;
+}
+.project-slider .single-img img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+.project-detail-banner {
+  position: relative;
+}
+
+.custom-button-wrap {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 10;
+}
+
+.custom-button-prev,
+.custom-button-next {
+  cursor: pointer;
+  font-size: 18px; 
+  background: #fff;
+  padding: 10px;
+  border-radius: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-button-prev i,
+.custom-button-next i {
+  color: #00225A;
 }
