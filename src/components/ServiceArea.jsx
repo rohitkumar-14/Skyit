@@ -71,8 +71,12 @@ const ServiceArea = () => {
               prevEl: ".custom-button-prev",
             }}
             spaceBetween={30}
-            slidesPerView={3}
             loop={true}
+            breakpoints={{
+              0: { slidesPerView: 1 },      
+              768: { slidesPerView: 2 },     
+              1024: { slidesPerView: 3 },    
+            }}
             className="service-slider swiper-arrow with-bg_white"
           >
             {services.map((service, idx) => (

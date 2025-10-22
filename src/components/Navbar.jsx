@@ -1,455 +1,293 @@
+import React, { useState, useEffect, useRef } from "react";
 
+// NOTE: Ensure your path to logos is correct
+import darkLogo from "../../public/assets/images/logo/dark.png";
+import lightLogo from "../../public/assets/images/logo/light.png";
 
 const Navbar = () => {
-  return (
-    <header className="main-header_area position-relative">
-      <div
-        className="header-top py-6 py-lg-3"
-        style={{ backgroundColor: "#ff5e13" }}>
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="offset-xl-2 offset-lg-3 col-xl-4 col-lg-5 d-none d-lg-block ms-auto">
-              <div className="header-top-right text-end">
-                <div className="contact-number d-flex align-items-center">
-                  <i class="fa-regular fa-envelope text-white"></i>
-                  <a href="mailto:info@example.com">info@example.com</a>
-                </div>
-              </div>
-            </div>
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    // State to track which sub-menus are open, keyed by their unique identifier (e.g., 'services', 'project')
+    const [mobileSubMenuOpen, setMobileSubMenuOpen] = useState({});
+    const mainHeaderRef = useRef(null);
+    const initialHeaderTopBg = "#ff5e13";
+    const stickyHeaderBg = "#00225a";
 
-            <div className="col-sm-6 d-block d-lg-none">
-              <div className="header-logo d-flex">
-                <a href="/">
-                  {/* <img className="d-none d-lg-block" src="assets/images/logo/dark.png" alt="Header Logo"/>
-                                    <img className="d-block d-lg-none" src="assets/images/logo/light.png" alt="Header Logo"/> */}
-                  <h1>SKYIT CONSTRUCTION </h1>
+    // --- Sticky Header Logic ---
+    useEffect(() => {
+        const handleScroll = () => {
+            if (mainHeaderRef.current) {
+                const header = mainHeaderRef.current;
+                const mainHeaderArea = header.closest(".main-header_area");
+                const headerTop = mainHeaderArea.querySelector(".header-top");
+
+                if (window.scrollY > 100) {
+                    header.classList.add("is-sticky");
+                    header.style.backgroundColor = stickyHeaderBg;
+                    if (headerTop) headerTop.style.display = "none";
+                } else {
+                    header.classList.remove("is-sticky");
+                    header.style.backgroundColor = stickyHeaderBg;
+                    if (headerTop) headerTop.style.display = "block";
+                }
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [stickyHeaderBg]);
+
+    // --- Mobile Menu Toggle Handlers ---
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
+
+    const closeMobileMenu = () => {
+        setIsMobileMenuOpen(false);
+        setMobileSubMenuOpen({});
+    };
+
+    // --- Mobile Sub-Menu Accordion Logic ---
+    const handleMobileSubMenuToggle = (e, menuItemKey) => {
+        e.preventDefault();
+        e.stopPropagation();
+
+        setMobileSubMenuOpen((prev) => {
+            const isOpen = prev[menuItemKey];
+
+            // Implement accordion (only one open at a time)
+            return {
+                [menuItemKey]: !isOpen,
+            };
+        });
+    };
+
+    // --- Mobile Navigation Renderer (for smooth transition & arrow alignment) ---
+    const renderMobileMenuItem = (item, index, parentKey = null) => {
+        const hasSubMenu = item.subItems && item.subItems.length > 0;
+        const menuItemKey = parentKey
+            ? `${parentKey}-${index}`
+            : item.text.toLowerCase().replace(/\s/g, "-");
+        const isOpen = mobileSubMenuOpen[menuItemKey];
+
+        return (
+            <li
+                key={menuItemKey}
+                className={`drop-holder ${hasSubMenu ? "menu-item-has-children" : ""} ${
+                    isOpen ? "menu-open" : ""
+                }`}>
+                <a
+                    href={item.link || "#"}
+                    onClick={hasSubMenu ? (e) => handleMobileSubMenuToggle(e, menuItemKey) : undefined}
+                    style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
+                >
+                    <span className="mm-text">{item.text}</span>
+                    {hasSubMenu && (
+                        <button
+                            className="menu-expand border-0 bg-transparent text-white ms-2"
+                            onClick={(e) => handleMobileSubMenuToggle(e, menuItemKey)}
+                            aria-label={`Toggle ${item.text} submenu`}
+                            style={{ padding: '0 5px' }} 
+                        >
+                            <i className={`ion-ios-arrow-${isOpen ? "up" : "down"}`}></i>
+                        </button>
+                    )}
                 </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="main-header header-sticky"
-        style={{ backgroundColor: "#00225a" }}>
-        <div className="container">
-          <div className="main-header_nav">
-            <div className="row align-items-center">
-              <div className="offset-xl-2 col-xl-10 d-none d-lg-block">
-                <div className="main-menu text-center">
-                  <nav className="main-nav">
-                    <ul>
-                      <li className="drop-holder">
-                        <a href="/">
-                          <span>Home</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="about">
-                          <span>About Us</span>
-                        </a>
-                      </li>
-                      <li className="drop-holder">
-                        <a href="#">
-                          <span>Services</span>
-                        </a>
-                        <ul className="drop-menu">
-                          <li>
-                            <a href="/services/project-management">
-                              <span className="mm-text">
-                                Project Management
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="/services/pre-design">
-                              <span className="mm-text">
-                                Pre-Design Activity
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="/services/construction-implementation">
-                              <span className="mm-text">
-                                Construction Implementation
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="/services/specialized-construction">
-                              <span className="mm-text">
-                                Specialized Construction
-                              </span>
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="drop-holder">
-                        <a href="#">
-                          <span>Project</span>
-                        </a>
-                        <ul className="drop-menu">
-                          <li>
-                            <a href="/project/hospitality-sector-projects">
-                              Hospitality Sector
-                            </a>
-                          </li>
-                          <li>
-                            <a href="/project/logistics-industrial-projects">
-                              Logistics & Industrial
-                            </a>
-                          </li>
-                          <li>
-                            <a href="/project/corporate-commercial-projects">
-                              Corporate & Commercial
-                            </a>
-                          </li>
-                          <li>
-                            <a href="/project/residential-projects">
-                              Residential
-                            </a>
-                          </li>
-                          <li>
-                            <a href="/project/healthcare-projects">
-                              Healthcare
-                            </a>
-                          </li>
-                          <li>
-                            <a href="/project/entertainment-multiplex-projects">
-                              Entertainment & Multiplex
-                            </a>
-                          </li>
-                          <li>
-                            <a href="/project/educational-sector-projects">
-                              Educational Sector
-                            </a>
-                          </li>
-                          <li>
-                            <a href="/project/urban-development-smart-city-projects">
-                              Urban Development & Smart City
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
 
-                      <li>
-                        <a href="contact">
-                          <span>Contact</span>
-                        </a>
-                      </li>
+                {hasSubMenu && (
+                    <ul
+                        className="sub-menu"
+                        style={{
+                            maxHeight: isOpen ? "500px" : "0", 
+                            overflow: "hidden",
+                            display: isOpen ? "block" : "none",
+                            transition: "max-height 0.3s ease-in-out", 
+                        }}>
+                        {item.subItems.map((subItem, subIndex) =>
+                            // Recursive call for nested items
+                            renderMobileMenuItem(subItem, subIndex, menuItemKey)
+                        )}
                     </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="header-logo-wrap d-none d-lg-flex">
-            <div className="header-fixed-logo">
-              <a href="/">
-                {/* <img src="assets/images/logo/dark.png" alt="Header Logo"/> */}
-                <h5>SKYIT CONSTRUCTION PVT LTD</h5>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="mobile-menu_wrapper" id="mobileMenu">
-        <div className="offcanvas-body">
-          <div className="inner-body">
-            <div className="offcanvas-top">
-              <a href="#" className="button-close">
-                <i className="ion-ios-close-empty"></i>
-              </a>
-            </div>
-            <div className="offcanvas-menu_area">
-              <nav className="offcanvas-navigation">
-                <ul className="mobile-menu">
-                  <li>
-                    <a href="/">
-                      <span className="mm-text">Home</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="about">
-                      <span className="mm-text">About Us</span>
-                    </a>
-                  </li>
-                  <li className="menu-item-has-children">
-                    <a href="#">
-                      <span className="mm-text">
-                        Services
-                        <i className="ion-ios-arrow-down"></i>
-                      </span>
-                    </a>
-                    <ul className="sub-menu">
-                      <li>
-                        <a href="service">
-                          <span className="mm-text">Services</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/services/project-management">
-                          <span className="mm-text">
-                            Project Management Services
-                          </span>
-                        </a>
-                        <a href="/services/pre-design">
-                          <span className="mm-text">
-                            Pre-Design Activity Services
-                          </span>
-                        </a>
-                        <a href="/services/construction-implementation">
-                          <span className="mm-text">
-                            Construction Implementation Services
-                          </span>
-                        </a>
-                        <a href="/services/specialized-construction">
-                          <span className="mm-text">
-                            Specialized Construction Services
-                          </span>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="menu-item-has-children">
-                    <a href="#">
-                      <span className="mm-text">
-                        Project
-                        <i className="ion-ios-arrow-down"></i>
-                      </span>
-                    </a>
-                    <ul className="sub-menu">
-                      <li>
-                        <a href="project">
-                          <span className="mm-text">Project Default</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="project-2-column">
-                          <span className="mm-text">Project 2 Column</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="project-gallery">
-                          <span className="mm-text">Project Gallery</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="project-slider">
-                          <span className="mm-text">Project Slider</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="project-detail">
-                          <span className="mm-text">Project Detail</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="menu-item-has-children">
-                    <a href="#">
-                      <span className="mm-text">
-                        Pages
-                        <i className="ion-ios-arrow-down"></i>
-                      </span>
-                    </a>
-                    <ul className="sub-menu">
-                      <li>
-                        <a href="our-clients">
-                          <span className="mm-text">Our Clients</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="our-team">
-                          <span className="mm-text">Our Team</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="our-working-process">
-                          <span className="mm-text">Our Working Process</span>
-                        </a>
-                      </li>
-                      <li className="menu-item-has-children">
-                        <a href="#">
-                          <span className="mm-text">
-                            Multi Dropdown
-                            <i className="ion-ios-arrow-down"></i>
-                          </span>
-                        </a>
-                        <ul className="sub-menu">
-                          <li className="menu-item-has-children">
-                            <a href="#">
-                              <span className="mm-text">
-                                Level 02
-                                <i className="ion-ios-arrow-down"></i>
-                              </span>
-                            </a>
-                            <ul className="sub-menu">
-                              <li className="menu-item-has-children">
-                                <a href="#">
-                                  <span className="mm-text">Level 03</span>
+                )}
+            </li>
+        );
+    };
+
+    const navItems = [
+        { text: "Home", link: "/" },
+        { text: "About Us", link: "about" },
+        {
+            text: "Services",
+            link: "#", // Use '#' or the main services page link
+            subItems: [
+                { text: "Project Management", link: "/services/project-management" },
+                { text: "Pre-Design Activity", link: "/services/pre-design" },
+                {
+                    text: "Construction Implementation",
+                    link: "/services/construction-implementation",
+                },
+                {
+                    text: "Specialized Construction",
+                    link: "/services/specialized-construction",
+                },
+            ],
+        },
+        {
+            text: "Project",
+            link: "#", // Use '#' or the main project page link
+            subItems: [
+                {
+                    text: "Hospitality Sector",
+                    link: "/project/hospitality-sector-projects",
+                },
+                {
+                    text: "Logistics & Industrial",
+                    link: "/project/logistics-industrial-projects",
+                },
+                {
+                    text: "Corporate & Commercial",
+                    link: "/project/corporate-commercial-projects",
+                },
+                { text: "Residential", link: "/project/residential-projects" },
+                { text: "Healthcare", link: "/project/healthcare-projects" },
+                {
+                    text: "Entertainment & Multiplex",
+                    link: "/project/entertainment-multiplex-projects",
+                },
+                {
+                    text: "Educational Sector",
+                    link: "/project/educational-sector-projects",
+                },
+                {
+                    text: "Urban Development & Smart City",
+                    link: "/project/urban-development-smart-city-projects",
+                },
+            ],
+        },
+        { text: "Contact", link: "contact" },
+    ];
+
+    return (
+        <header className="main-header_area position-relative">
+            {/* ... (Header Top Content - No changes needed here) ... */}
+            <div
+                className="header-top py-6 py-lg-3"
+                data-bg-color={initialHeaderTopBg}
+                style={{ backgroundColor: initialHeaderTopBg }}>
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="offset-xl-2 offset-lg-3 col-xl-4 col-lg-5 d-none d-lg-block ms-auto">
+                            <div className="header-top-right text-end">
+                                <div className="contact-number d-flex align-items-center">
+                                    <i className="fa-regular fa-envelope text-white me-2"></i>
+                                    <a
+                                        href="mailto:info@example.com"
+                                        className="text-white text-decoration-none">
+                                        info@example.com
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-sm-6 d-block d-lg-none">
+                            <div className="header-logo d-flex align-items-center justify-content-between w-100">
+                                <a href="index.html" className="text-white text-decoration-none">
+                                    <h1 className="h5 mb-0 text-white">SKYIT CONSTRUCTION PVT LTD </h1>
                                 </a>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="menu-item-has-children">
-                    <a href="#">
-                      <span className="mm-text">
-                        Blog
-                        <i className="ion-ios-arrow-down"></i>
-                      </span>
-                    </a>
-                    <ul className="sub-menu">
-                      <li>
-                        <a href="blog">
-                          <span className="mm-text">Blog Default</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="blog-leftsidebar">
-                          <span className="mm-text">Blog Left Sidebar</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="blog-rightsidebar">
-                          <span className="mm-text">Blog Right Sidebar</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="blog-detail">
-                          <span className="mm-text">Blog Detail</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="menu-item-has-children">
-                    <a href="#">
-                      <span className="mm-text">
-                        Shop
-                        <i className="ion-ios-arrow-down"></i>
-                      </span>
-                    </a>
-                    <ul className="sub-menu">
-                      <li>
-                        <a href="shop">
-                          <span className="mm-text">Shop Default</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="shop-leftsidebar">
-                          <span className="mm-text">Shop Left Sidebar</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="shop-rightsidebar">
-                          <span className="mm-text">Shop Right Sidebar</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="product-detail">
-                          <span className="mm-text">Product Detail</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="contact">
-                      <span className="mm-text">Contact</span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
+                                <button
+                                    onClick={toggleMobileMenu}
+                                    className="border-0 bg-transparent pl-0"
+                                    aria-label="Toggle mobile menu">
+                                    <i className="fa fa-navicon text-white fs-4"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div className="offcanvas-minicart_wrapper" id="miniCart">
-        <div className="offcanvas-body">
-          <div className="minicart-content">
-            <div className="minicart-heading">
-              <h4 className="mb-0">Shopping Cart</h4>
-              <a href="#" className="button-close">
-                <i className="ion-ios-close-empty"></i>
-              </a>
+
+            {/* ... (Main Header/Desktop Navigation - No changes needed here) ... */}
+            <div
+                className="main-header header-sticky"
+                data-bg-color={stickyHeaderBg}
+                ref={mainHeaderRef}
+                style={{ backgroundColor: stickyHeaderBg }}>
+                <div className="container">
+                    <div className="main-header_nav">
+                        <div className="row align-items-center">
+                            <div className="offset-xl-2 col-xl-10 d-none d-lg-block">
+                                <div className="main-menu text-center">
+                                    <nav className="main-nav">
+                                        <ul>
+                                            {navItems.map((item) => (
+                                                <li
+                                                    key={item.text}
+                                                    className={`drop-holder ${
+                                                        item.subItems ? "drop-holder" : ""
+                                                    }`}>
+                                                    <a href={item.link}>
+                                                        <span>{item.text}</span>
+                                                    </a>
+                                                    {item.subItems && (
+                                                        <ul className="drop-menu">
+                                                            {item.subItems.map((subItem) => (
+                                                                <li key={subItem.text}>
+                                                                    <a href={subItem.link}>{subItem.text}</a>
+                                                                </li>
+                                                            ))}
+                                                        </ul>
+                                                    )}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="header-logo-wrap d-none d-lg-flex">
+                        <div className="header-fixed-logo">
+                            <a href="index.html">
+                                <h5 className="mb-0">SKYIT CONSTRUCTION PVT LTD</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <ul className="minicart-list">
-              <li className="minicart-product">
-                <a className="product-item_remove" href="#">
-                  <i className="ion-ios-close-empty"></i>
-                </a>
-                <div className="product-item_img">
-                  <img
-                    className="img-full"
-                    src="assets/images/product/small-size/1-1-100x103.jpg"
-                    alt="Product Image"
-                  />
+
+            {/* Mobile Menu Offcanvas Wrapper */}
+            <div
+                className={`mobile-menu_wrapper ${isMobileMenuOpen ? "open" : ""}`}
+                id="mobileMenu">
+                <div className="offcanvas-body">
+                    <div className="inner-body">
+                        <div className="offcanvas-top">
+                            <button
+                                onClick={closeMobileMenu}
+                                className="button-close border-0 bg-transparent pl-0"
+                                aria-label="Close mobile menu">
+                                <i className="ion-ios-close-empty text-white fs-4"></i>
+                            </button>
+                        </div>
+                        <div className="offcanvas-menu_area">
+                            <nav className="offcanvas-navigation">
+                                <ul className="mobile-menu">
+                                    {/* RENDER MOBILE MENU WITH SUB-MENU LOGIC */}
+                                    {navItems.map((item, index) =>
+                                        renderMobileMenuItem(item, index)
+                                    )}
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
-                <div className="product-item_content">
-                  <a className="product-item_title" href="shop">
-                    Cutting Pliers
-                  </a>
-                  <span className="product-item_quantity">1 x $80.00</span>
-                </div>
-              </li>
-              <li className="minicart-product">
-                <a className="product-item_remove" href="#">
-                  <i className="ion-ios-close-empty"></i>
-                </a>
-                <div className="product-item_img">
-                  <img
-                    className="img-full"
-                    src="assets/images/product/small-size/1-2-100x103.jpg"
-                    alt="Product Image"
-                  />
-                </div>
-                <div className="product-item_content">
-                  <a className="product-item_title" href="shop">
-                    Safety Helmet
-                  </a>
-                  <span className="product-item_quantity">1 x $120.00</span>
-                </div>
-              </li>
-              <li className="minicart-product">
-                <a className="product-item_remove" href="#">
-                  <i className="ion-ios-close-empty"></i>
-                </a>
-                <div className="product-item_img">
-                  <img
-                    className="img-full"
-                    src="assets/images/product/small-size/1-3-100x103.jpg"
-                    alt="Product Image"
-                  />
-                </div>
-                <div className="product-item_content">
-                  <a className="product-item_title" href="shop">
-                    Jack Hammer Drill
-                  </a>
-                  <span className="product-item_quantity">1 x $230.00</span>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div className="minicart-item_total">
-            <span>Subtotal</span>
-            <span className="ammount">$91.05</span>
-          </div>
-          <div className="group-btn_wrap d-grid gap-2">
-            <a href="cart" className="btn btn-secondary btn-primary-hover">
-              View Cart
-            </a>
-            <a href="checkout" className="btn btn-secondary btn-primary-hover">
-              Checkout
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="global-overlay"></div>
-    </header>
-  );
+            </div>
+
+            {/* Global Overlay */}
+            <div
+                className={`global-overlay ${isMobileMenuOpen ? "visible" : ""}`}
+                onClick={closeMobileMenu}></div>
+        </header>
+    );
 };
 
 export default Navbar;

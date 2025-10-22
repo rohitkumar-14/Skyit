@@ -22072,3 +22072,55 @@ input[type=checkbox]:checked+label:after {
 .custom-button-next i {
   color: #fff;
 }
+.brand-area {
+  background-size: cover;
+  background-position: center;
+}
+
+.brand-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.brand-item img {
+  max-width: 140px;
+  width: 100%;
+  height: auto;
+  filter: grayscale(0%);
+  transition: all 0.3s ease;
+}
+
+.brand-item img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .brand-wrapper {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .brand-item {
+    flex: 1 1 45%; 
+    text-align: center;
+  }
+
+  .brand-item img {
+    max-width: 100px;
+  }
+}
+
+@media (min-width: 769px) {
+  .brand-wrapper {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .brand-item {
+    flex: 0 0 auto;
+  }
+}
