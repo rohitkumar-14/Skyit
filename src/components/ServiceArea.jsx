@@ -52,7 +52,7 @@ const ServiceArea = () => {
             }}
           >
             <h2 className="info mb-0">
-              Do you have projects? <span>+98745 214 785</span>
+              Do you have projects? <span>info@example.com</span>
             </h2>
           </div>
           <p className="font-size-20 mt-2">

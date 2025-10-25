@@ -180,7 +180,7 @@ const Navbar = () => {
 
                         <div className="col-sm-6 d-block d-lg-none">
                             <div className="header-logo d-flex align-items-center justify-content-between w-100">
-                                <a href="index.html" className="text-white text-decoration-none">
+                                <a href="/" className="text-white text-decoration-none">
                                     <h1 className="h5 mb-0 text-white">SKYIT CONSTRUCTION PVT LTD </h1>
                                 </a>
                                 <button
@@ -235,7 +235,7 @@ const Navbar = () => {
                     </div>
                     <div className="header-logo-wrap d-none d-lg-flex">
                         <div className="header-fixed-logo">
-                            <a href="index.html">
+                            <a href="/">
                                 <h5 className="mb-0">SKYIT CONSTRUCTION PVT LTD</h5>
                             </a>
                         </div>

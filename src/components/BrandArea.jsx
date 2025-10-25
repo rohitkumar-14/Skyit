@@ -11,10 +11,10 @@ const BrandArea = () => {
           <div className="col-lg-12">
             <div className="brand-grid">
               <div className="brand-row d-flex align-items-center flex-wrap mb-4">
-                {[...Array(5)].map((_, i) => (
+                {[...Array(4)].map((_, i) => (
                   <a className="brand-item mx-3" href="#" key={i}>
                     <img
-                      src={`/assets/images/brand/${i + 1}.png`}
+                      src={`/assets/images/skyit/clients/${i + 1}.png`}
                       alt={`Brand ${i + 1}`}
                     />
                   </a>
@@ -22,10 +22,21 @@ const BrandArea = () => {
               </div>
 
               <div className="d-flex align-items-center flex-wrap" style={{gap: "6rem"}}>
-                {[...Array(5)].map((_, i) => (
+                {[...Array(4)].map((_, i) => (
                   <a className="brand-item mx-3" href="#" key={i + 5}>
                     <img
-                      src={`/assets/images/brand/${i + 6}.png`}
+                      src={`/assets/images/skyit/clients/${i + 5}.png`}
+                      alt={`Brand ${i + 6}`}
+                    />
+                  </a>
+                ))}
+              </div>
+
+              <div className="d-flex align-items-center flex-wrap" style={{gap: "6rem"}}>
+                {[...Array(1)].map((_, i) => (
+                  <a className="brand-item mx-3" href="#" key={i + 6}>
+                    <img
+                      src={`/assets/images/skyit/clients/${i + 9}.png`}
                       alt={`Brand ${i + 6}`}
                     />
                   </a>

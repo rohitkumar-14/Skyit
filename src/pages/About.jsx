@@ -70,7 +70,7 @@ const About = () => {
         </div>
       </div>
       <Counter />
-      <ProjectArea />
+      {/* <ProjectArea /> */}
       <Team />
       <Testimonials />
     </>

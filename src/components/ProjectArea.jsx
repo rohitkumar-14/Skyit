@@ -57,9 +57,11 @@ const ProjectArea = () => {
               className="project-slider">
               <SwiperSlide>
                 <div className="project-item">
-                  <a className="project-img" href="/project">
+                  <a
+                    className="project-img"
+                    href="/project/hospitality-sector-projects">
                     <img
-                      src="/assets/images/project/medium-size/1-1-405x474.jpg"
+                      src="/assets/images/skyit/leela/LEELA.jpg"
                       alt="Project Image"
                     />
                   </a>
@@ -72,10 +74,26 @@ const ProjectArea = () => {
                   </div>
                 </div>
               </SwiperSlide>
-
               <SwiperSlide>
                 <div className="project-item">
-                  <a className="project-img" href="/project">
+                  <a className="project-img" href="/project/residential-projects">
+                    <img
+                      src="/assets/images/skyit/ananta/ananta.jpeg"
+                      alt="Project Image"
+                    />
+                  </a>
+                  <div className="project-content">
+                    <span className="sub-title">RESIDENTIAL</span>
+                    <h3 className="title mb-0">
+                      <a href="/project">Ananta Aspire</a>
+                    </h3>
+                    <span>Ongoing Project</span>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="project-item">
+                  <a className="project-img" href="/project/logistics-industrial-projects">
                     <img
                       src="/assets/images/project/medium-size/1-2-405x474.jpg"
                       alt="Project Image"
@@ -93,7 +111,7 @@ const ProjectArea = () => {
 
               <SwiperSlide>
                 <div className="project-item">
-                  <a className="project-img" href="/project">
+                  <a className="project-img" href="/project/logistics-industrial-projects">
                     <img
                       src="/assets/images/project/medium-size/1-3-405x474.jpg"
                       alt="Project Image"
@@ -114,7 +132,7 @@ const ProjectArea = () => {
 
               <SwiperSlide>
                 <div className="project-item">
-                  <a className="project-img" href="/project">
+                  <a className="project-img" href="/project/corporate-commercial-projects">
                     <img
                       src="/assets/images/project/medium-size/1-4-405x474.jpg"
                       alt="Project Image"
@@ -132,25 +150,7 @@ const ProjectArea = () => {
 
               <SwiperSlide>
                 <div className="project-item">
-                  <a className="project-img" href="/project">
-                    <img
-                      src="/assets/images/project/medium-size/1-5-405x474.jpg"
-                      alt="Project Image"
-                    />
-                  </a>
-                  <div className="project-content">
-                    <span className="sub-title">RESIDENTIAL</span>
-                    <h3 className="title mb-0">
-                      <a href="/project">Ananta Aspire</a>
-                    </h3>
-                    <span>Ongoing Project</span>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="project-item">
-                  <a className="project-img" href="/project">
+                  <a className="project-img" href="/project/healthcare-projects">
                     <img
                       src="/assets/images/project/medium-size/1-6-405x474.jpg"
                       alt="Project Image"
@@ -167,7 +167,7 @@ const ProjectArea = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="project-item">
-                  <a className="project-img" href="/project">
+                  <a className="project-img" href="/project/entertainment-multiplex-projects">
                     <img
                       src="/assets/images/project/medium-size/1-6-405x474.jpg"
                       alt="Project Image"
@@ -184,7 +184,7 @@ const ProjectArea = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="project-item">
-                  <a className="project-img" href="/project">
+                  <a className="project-img" href="/project/educational-sector-projects">
                     <img
                       src="/assets/images/project/medium-size/1-6-405x474.jpg"
                       alt="Project Image"
@@ -201,7 +201,7 @@ const ProjectArea = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="project-item">
-                  <a className="project-img" href="/project">
+                  <a className="project-img" href="/project/urban-development-smart-city-projects">
                     <img
                       src="/assets/images/project/medium-size/1-6-405x474.jpg"
                       alt="Project Image"
