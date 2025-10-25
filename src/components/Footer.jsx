@@ -4,7 +4,10 @@ const Footer = () => {
   return (
     <>
      <div className="footer-area">
-            <div className="footer-top pt-100 pb-80" style={{ backgroundImage: "url('/assets/images/footer/bg/1-1-1920x454.png')" }}>
+            <div className="footer-top pt-100 pb-80" 
+            // style={{ backgroundImage: "url('/assets/images/footer/bg/1-1-1920x454.png')" }}
+            style={{ backgroundColor: "#0B1E33" }}
+            >
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-3 col-lg-3">
@@ -87,7 +90,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="footer-bottom py-3 text-hawkes-blue" style={{ backgroundColor: "#00225a" }}>
+            <div className="footer-bottom py-3 text-hawkes-blue" style={{ backgroundColor: "#0B1E33" }}>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 col-sm-4">

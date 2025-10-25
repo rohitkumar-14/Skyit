@@ -7,7 +7,12 @@ const NewsLetter = () => {
         style={{
           backgroundImage:
             "url('/assets/images/newsletter/bg/1-1-1920x198.png')",
-        }}>
+        }}
+        // style={{
+        //   backgroundImage:
+        //     "url('/assets/images/newsletter/bg/1-1-1920x198.png')",
+        // }}
+        >
         <div className="container">
           <div className="row">
             <div className="col-lg-12">

@@ -29,7 +29,7 @@ const Home = () => {
 
       <ServiceArea />
 
-      <div className="banner-style-2 position-relative"
+      {/* <div className="banner-style-2 position-relative"
         style={{ backgroundImage: "url('assets/images/banner/bg/2-1.png')" }}>
         <div className="container-fluid p-0 overflow-hidden">
           <div className="row g-0">
@@ -75,7 +75,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <Counter />
       {/* <ClientsMap /> */}

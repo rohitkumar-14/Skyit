@@ -1,18 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
-
-// NOTE: Ensure your path to logos is correct
 import darkLogo from "../../public/assets/images/logo/dark.png";
 import lightLogo from "../../public/assets/images/logo/light.png";
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    // State to track which sub-menus are open, keyed by their unique identifier (e.g., 'services', 'project')
     const [mobileSubMenuOpen, setMobileSubMenuOpen] = useState({});
     const mainHeaderRef = useRef(null);
-    const initialHeaderTopBg = "#ff5e13";
-    const stickyHeaderBg = "#00225a";
+    const initialHeaderTopBg = "#7A7A7A";
+    const stickyHeaderBg = "#0B1E33";
 
-    // --- Sticky Header Logic ---
     useEffect(() => {
         const handleScroll = () => {
             if (mainHeaderRef.current) {
@@ -36,7 +32,6 @@ const Navbar = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, [stickyHeaderBg]);
 
-    // --- Mobile Menu Toggle Handlers ---
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
@@ -46,22 +41,18 @@ const Navbar = () => {
         setMobileSubMenuOpen({});
     };
 
-    // --- Mobile Sub-Menu Accordion Logic ---
     const handleMobileSubMenuToggle = (e, menuItemKey) => {
         e.preventDefault();
         e.stopPropagation();
 
         setMobileSubMenuOpen((prev) => {
             const isOpen = prev[menuItemKey];
-
-            // Implement accordion (only one open at a time)
             return {
                 [menuItemKey]: !isOpen,
             };
         });
     };
 
-    // --- Mobile Navigation Renderer (for smooth transition & arrow alignment) ---
     const renderMobileMenuItem = (item, index, parentKey = null) => {
         const hasSubMenu = item.subItems && item.subItems.length > 0;
         const menuItemKey = parentKey
@@ -117,7 +108,7 @@ const Navbar = () => {
         { text: "About Us", link: "about" },
         {
             text: "Services",
-            link: "#", // Use '#' or the main services page link
+            link: "#", 
             subItems: [
                 { text: "Project Management", link: "/services/project-management" },
                 { text: "Pre-Design Activity", link: "/services/pre-design" },
@@ -133,7 +124,7 @@ const Navbar = () => {
         },
         {
             text: "Project",
-            link: "#", // Use '#' or the main project page link
+            link: "#",
             subItems: [
                 {
                     text: "Hospitality Sector",
@@ -163,12 +154,11 @@ const Navbar = () => {
                 },
             ],
         },
-        { text: "Contact", link: "contact" },
+        { text: "Contact", link: "/contact" },
     ];
 
     return (
         <header className="main-header_area position-relative">
-            {/* ... (Header Top Content - No changes needed here) ... */}
             <div
                 className="header-top py-6 py-lg-3"
                 data-bg-color={initialHeaderTopBg}
@@ -205,7 +195,6 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* ... (Main Header/Desktop Navigation - No changes needed here) ... */}
             <div
                 className="main-header header-sticky"
                 data-bg-color={stickyHeaderBg}
@@ -254,7 +243,6 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* Mobile Menu Offcanvas Wrapper */}
             <div
                 className={`mobile-menu_wrapper ${isMobileMenuOpen ? "open" : ""}`}
                 id="mobileMenu">
@@ -271,7 +259,6 @@ const Navbar = () => {
                         <div className="offcanvas-menu_area">
                             <nav className="offcanvas-navigation">
                                 <ul className="mobile-menu">
-                                    {/* RENDER MOBILE MENU WITH SUB-MENU LOGIC */}
                                     {navItems.map((item, index) =>
                                         renderMobileMenuItem(item, index)
                                     )}
@@ -282,7 +269,6 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* Global Overlay */}
             <div
                 className={`global-overlay ${isMobileMenuOpen ? "visible" : ""}`}
                 onClick={closeMobileMenu}></div>
