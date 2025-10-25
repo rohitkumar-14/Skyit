@@ -32,7 +32,7 @@ const Projects = () => {
           <div className="row">
             {projects.slice(0, visible).map((project) => (
               <div key={project.id} className="col-lg-4 col-sm-6 pb-6">
-                <div className="project-item">
+                <div className="project-item shadow-lg">
                   <Link className="project-img" to={`/project-details/${slug}/${project.id}`}>
                     <img src={project?.projectMainImage || "/assets/images/project/medium-size/2-1-370x540.jpg"} alt={project.title} />
                   </Link>

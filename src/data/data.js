@@ -10,13 +10,14 @@ export const projectSections = [
         subtitle: "Luxury Hospitality Project",
         description:
           "Construction of itself, because it is pain some proper style design occur are pleasure",
-        breadcrumbImage: "/assets/images/breadcrumb/bg/1.jpg",
+        breadcrumbImage: "/assets/images/skyit/leela/LEELAPALACE.jpg",
+        projectMainImage: "/assets/images/skyit/leela/LEELA.jpg",
         subtitleDescription:
           "Provide the best Construction services for our client with expert team, modern equipment, and quality materials",
         summary:
           "This project involved complete landscape development at Lake Pichola property, including creation of three pools, five ultra-luxury villas, and comprehensive beautification.",
         images: [
-          "/assets/images/project-detail/1-1-370x500.jpg",
+          "/assets/images/skyit/leela/LEELAPALACE.jpg",
           "/assets/images/project-detail/1-2-226x245.jpg",
           "/assets/images/project-detail/1-3-222x245.jpg",
           "/assets/images/project-detail/1-4-264x245.jpg",
@@ -69,13 +70,14 @@ export const projectSections = [
         subtitle: "Luxury Hospitality Project",
         description:
           "Construction of itself, because it is pain some proper style design occur are pleasure",
-        breadcrumbImage: "/assets/images/breadcrumb/bg/1.jpg",
+        breadcrumbImage: "/assets/images/skyit/hilton/HILTONMAIN.jpg",
+        projectMainImage: "/assets/images/skyit/hilton/hilton.jpg",
         subtitleDescription:
           "Provide the best Construction services for our client with expert team, modern equipment, and quality materials",
         summary:
           "This project involved complete landscape development, including comprehensive hotel construction and finishing works.",
         images: [
-          "/assets/images/project-detail/1-1-370x500.jpg",
+          "/assets/images/skyit/hilton/HILTONMAIN.jpg",
           "/assets/images/project-detail/1-2-226x245.jpg",
           "/assets/images/project-detail/1-3-222x245.jpg",
           "/assets/images/project-detail/1-4-264x245.jpg",
@@ -126,15 +128,17 @@ export const projectSections = [
         id: 3,
         title: "Sterling Holidays Resorts",
         subtitle: "Luxury Hospitality Project",
-        projectMainImage: "/assets/images/skyit/Sterling/Sterling5.jpeg",
+        projectMainImage:
+          "/assets/images/skyit/Sterling/STERLINGMUSSORIEtn.jpg",
         description:
           "Construction of itself, because it is pain some proper style design occur are pleasure",
-        breadcrumbImage: "/assets/images/skyit/Sterling/Sterling.jpeg",
+        breadcrumbImage: "/assets/images/skyit/Sterling/STERLINGMUSSORIE.jpg",
         subtitleDescription:
           "Provide the best Construction services for our client with expert team, modern equipment, and quality materials",
         summary:
           "This project involved multi-location resort development and construction across India.",
         images: [
+          "/assets/images/skyit/Sterling/STERLINGMUSSORIE.jpg",
           "/assets/images/skyit/Sterling/Sterling.jpeg",
           "/assets/images/skyit/Sterling/Sterling1.jpeg",
           "/assets/images/skyit/Sterling/Sterling2.jpeg",
@@ -184,6 +188,186 @@ export const projectSections = [
       },
       {
         id: 4,
+        title: "Taj Hotels",
+        subtitle: "Interior Fit-out Projects",
+        projectMainImage: "/assets/images/skyit/TAJ.jpg",
+        description:
+          "Construction of itself, because it is pain some proper style design occur are pleasure",
+        breadcrumbImage: "/assets/images/skyit/Sterling/Sterling.jpeg",
+        subtitleDescription:
+          "Provide the best Construction services for our client with expert team, modern equipment, and quality materials",
+        summary:
+          "High-end interior fit-out projects for multiple Taj Hotels across India.",
+        images: [
+          "/assets/images/skyit/Sterling/Sterling.jpeg",
+          "/assets/images/skyit/Sterling/Sterling1.jpeg",
+          "/assets/images/skyit/Sterling/Sterling2.jpeg",
+          "/assets/images/skyit/Sterling/Sterling3.jpeg",
+          "/assets/images/skyit/Sterling/Sterling4.jpeg",
+        ],
+        features: [
+          "Luxury interior execution",
+          "Attention to hospitality standards",
+          "Premium finishes and furnishings",
+        ],
+        featuredImages: [
+          "/assets/images/single-service/2-1-265x185.jpg",
+          "/assets/images/single-service/2-2-265x185.jpg",
+          "/assets/images/single-service/2-3-265x185.jpg",
+          "/assets/images/single-service/2-4-265x185.jpg",
+        ],
+        overview:
+          "Interior fit-out projects delivering signature luxury aesthetics for Taj brand.",
+        overviewList: [
+          [
+            "Sophisticated material selection",
+            "Flawless craftsmanship",
+            "Integration of brand identity",
+          ],
+          [
+            "Coordination with multiple hotel units",
+            "Efficient resource management",
+            "Delivered with perfection",
+          ],
+        ],
+        info: {
+          "Client name": "Taj Hotels Group",
+          Location: "Pan India",
+          Area: "Varies",
+          Budget: "$8,000,000",
+          Architect: "Taj Design Studio",
+          Contractor: "Gaurav Sharma Constructions",
+          "Start date": "01 Jan, 2021",
+          "Delivery date": "31 Dec, 2022",
+        },
+        brochures: [
+          { name: "Brochure.PDF", url: "#" },
+          { name: "Brochure.DOC", url: "#" },
+        ],
+        sidebarBanner: "/assets/images/sidebar/3-270x369.jpg",
+      },
+      {
+        id: 5,
+        title: "Radisson Hotels",
+        subtitle: "Interior Design and Execution",
+        projectMainImage: "/assets/images/skyit/radissonLOG.jpg",
+        description:
+          "Construction of itself, because it is pain some proper style design occur are pleasure",
+        breadcrumbImage: "/assets/images/skyit/Sterling/Sterling.jpeg",
+        subtitleDescription:
+          "Provide the best Construction services for our client with expert team, modern equipment, and quality materials",
+        summary:
+          "Interior design and execution projects for Radisson Hotels across India.",
+        images: [
+          "/assets/images/skyit/Sterling/Sterling.jpeg",
+          "/assets/images/skyit/Sterling/Sterling1.jpeg",
+          "/assets/images/skyit/Sterling/Sterling2.jpeg",
+          "/assets/images/skyit/Sterling/Sterling3.jpeg",
+          "/assets/images/skyit/Sterling/Sterling4.jpeg",
+        ],
+        features: [
+          "High-end design implementation",
+          "Expert team collaboration",
+          "Elegant finishing and furnishing",
+        ],
+        featuredImages: [
+          "/assets/images/single-service/2-1-265x185.jpg",
+          "/assets/images/single-service/2-2-265x185.jpg",
+          "/assets/images/single-service/2-3-265x185.jpg",
+          "/assets/images/single-service/2-4-265x185.jpg",
+        ],
+        overview:
+          "Delivered interior design excellence across multiple Radisson properties, enhancing brand consistency and luxury appeal.",
+        overviewList: [
+          [
+            "Elegant and functional spaces",
+            "Modern design trends applied",
+            "Precise execution of finishes",
+          ],
+          [
+            "Client coordination at each stage",
+            "Sustainability in material selection",
+            "Timely delivery",
+          ],
+        ],
+        info: {
+          "Client name": "Radisson Hotels Group",
+          Location: "Pan India",
+          Area: "Varies by property",
+          Budget: "$9,000,000",
+          Architect: "Radisson Design Partners",
+          Contractor: "Gaurav Sharma Constructions",
+          "Start date": "01 Apr, 2022",
+          "Delivery date": "31 Mar, 2024",
+        },
+        brochures: [
+          { name: "Brochure.PDF", url: "#" },
+          { name: "Brochure.DOC", url: "#" },
+        ],
+        sidebarBanner: "/assets/images/sidebar/3-270x369.jpg",
+      },
+      {
+        id: 6,
+        title: "Marriott Hotels",
+        subtitle: "Hospitality Interior Projects",
+        projectMainImage: "/assets/images/skyit/MARRIOTT.png",
+        description:
+          "Construction of itself, because it is pain some proper style design occur are pleasure",
+        breadcrumbImage: "/assets/images/skyit/Sterling/Sterling.jpeg",
+        subtitleDescription:
+          "Provide the best Construction services for our client with expert team, modern equipment, and quality materials",
+        summary:
+          "Hospitality interior projects for Marriott Hotels across India.",
+        images: [
+          "/assets/images/skyit/Sterling/Sterling.jpeg",
+          "/assets/images/skyit/Sterling/Sterling1.jpeg",
+          "/assets/images/skyit/Sterling/Sterling2.jpeg",
+          "/assets/images/skyit/Sterling/Sterling3.jpeg",
+          "/assets/images/skyit/Sterling/Sterling4.jpeg",
+        ],
+        features: [
+          "Premium hospitality interiors",
+          "Custom furniture and fittings",
+          "Luxury brand standard implementation",
+        ],
+        featuredImages: [
+          "/assets/images/single-service/2-1-265x185.jpg",
+          "/assets/images/single-service/2-2-265x185.jpg",
+          "/assets/images/single-service/2-3-265x185.jpg",
+          "/assets/images/single-service/2-4-265x185.jpg",
+        ],
+        overview:
+          "Executed Marriott hotel interiors with precision, quality, and brand alignment.",
+        overviewList: [
+          [
+            "Luxury interior detailing",
+            "Client-driven customization",
+            "Quality craftsmanship",
+          ],
+          [
+            "High durability materials",
+            "Perfect blend of design and function",
+            "On-time project completion",
+          ],
+        ],
+        info: {
+          "Client name": "Marriott Hotels Group",
+          Location: "Pan India",
+          Area: "Varies by property",
+          Budget: "$10,000,000",
+          Architect: "Marriott Design Partners",
+          Contractor: "Gaurav Sharma Constructions",
+          "Start date": "15 Jul, 2021",
+          "Delivery date": "31 Dec, 2023",
+        },
+        brochures: [
+          { name: "Brochure.PDF", url: "#" },
+          { name: "Brochure.DOC", url: "#" },
+        ],
+        sidebarBanner: "/assets/images/sidebar/3-270x369.jpg",
+      },
+      {
+        id: 7,
         title: "Crown Plaza Noida",
         subtitle: "Hotel Construction and Development",
         projectMainImage: "/assets/images/skyit/Sterling/Sterling5.jpeg",
@@ -243,7 +427,7 @@ export const projectSections = [
         sidebarBanner: "/assets/images/sidebar/3-270x369.jpg",
       },
       {
-        id: 5,
+        id: 8,
         title: "Bliss Hotel",
         subtitle: "Complete Hotel Design Works",
         projectMainImage: "/assets/images/skyit/Sterling/Sterling5.jpeg",
@@ -303,7 +487,7 @@ export const projectSections = [
         sidebarBanner: "/assets/images/sidebar/3-270x369.jpg",
       },
       {
-        id: 6,
+        id: 9,
         title: "Rooms Renovation Package",
         subtitle: "Luxury Renovation Project",
         projectMainImage: "/assets/images/skyit/Sterling/Sterling5.jpeg",
@@ -355,186 +539,6 @@ export const projectSections = [
           Contractor: "Gaurav Sharma Constructions",
           "Start date": "01 Jun, 2022",
           "Delivery date": "30 May, 2023",
-        },
-        brochures: [
-          { name: "Brochure.PDF", url: "#" },
-          { name: "Brochure.DOC", url: "#" },
-        ],
-        sidebarBanner: "/assets/images/sidebar/3-270x369.jpg",
-      },
-      {
-        id: 7,
-        title: "Taj Hotels",
-        subtitle: "Interior Fit-out Projects",
-        projectMainImage: "/assets/images/skyit/Sterling/Sterling5.jpeg",
-        description:
-          "Construction of itself, because it is pain some proper style design occur are pleasure",
-        breadcrumbImage: "/assets/images/skyit/Sterling/Sterling.jpeg",
-        subtitleDescription:
-          "Provide the best Construction services for our client with expert team, modern equipment, and quality materials",
-        summary:
-          "High-end interior fit-out projects for multiple Taj Hotels across India.",
-        images: [
-          "/assets/images/skyit/Sterling/Sterling.jpeg",
-          "/assets/images/skyit/Sterling/Sterling1.jpeg",
-          "/assets/images/skyit/Sterling/Sterling2.jpeg",
-          "/assets/images/skyit/Sterling/Sterling3.jpeg",
-          "/assets/images/skyit/Sterling/Sterling4.jpeg",
-        ],
-        features: [
-          "Luxury interior execution",
-          "Attention to hospitality standards",
-          "Premium finishes and furnishings",
-        ],
-        featuredImages: [
-          "/assets/images/single-service/2-1-265x185.jpg",
-          "/assets/images/single-service/2-2-265x185.jpg",
-          "/assets/images/single-service/2-3-265x185.jpg",
-          "/assets/images/single-service/2-4-265x185.jpg",
-        ],
-        overview:
-          "Interior fit-out projects delivering signature luxury aesthetics for Taj brand.",
-        overviewList: [
-          [
-            "Sophisticated material selection",
-            "Flawless craftsmanship",
-            "Integration of brand identity",
-          ],
-          [
-            "Coordination with multiple hotel units",
-            "Efficient resource management",
-            "Delivered with perfection",
-          ],
-        ],
-        info: {
-          "Client name": "Taj Hotels Group",
-          Location: "Pan India",
-          Area: "Varies",
-          Budget: "$8,000,000",
-          Architect: "Taj Design Studio",
-          Contractor: "Gaurav Sharma Constructions",
-          "Start date": "01 Jan, 2021",
-          "Delivery date": "31 Dec, 2022",
-        },
-        brochures: [
-          { name: "Brochure.PDF", url: "#" },
-          { name: "Brochure.DOC", url: "#" },
-        ],
-        sidebarBanner: "/assets/images/sidebar/3-270x369.jpg",
-      },
-      {
-        id: 8,
-        title: "Radisson Hotels",
-        subtitle: "Interior Design and Execution",
-        projectMainImage: "/assets/images/skyit/Sterling/Sterling5.jpeg",
-        description:
-          "Construction of itself, because it is pain some proper style design occur are pleasure",
-        breadcrumbImage: "/assets/images/skyit/Sterling/Sterling.jpeg",
-        subtitleDescription:
-          "Provide the best Construction services for our client with expert team, modern equipment, and quality materials",
-        summary:
-          "Interior design and execution projects for Radisson Hotels across India.",
-        images: [
-          "/assets/images/skyit/Sterling/Sterling.jpeg",
-          "/assets/images/skyit/Sterling/Sterling1.jpeg",
-          "/assets/images/skyit/Sterling/Sterling2.jpeg",
-          "/assets/images/skyit/Sterling/Sterling3.jpeg",
-          "/assets/images/skyit/Sterling/Sterling4.jpeg",
-        ],
-        features: [
-          "High-end design implementation",
-          "Expert team collaboration",
-          "Elegant finishing and furnishing",
-        ],
-        featuredImages: [
-          "/assets/images/single-service/2-1-265x185.jpg",
-          "/assets/images/single-service/2-2-265x185.jpg",
-          "/assets/images/single-service/2-3-265x185.jpg",
-          "/assets/images/single-service/2-4-265x185.jpg",
-        ],
-        overview:
-          "Delivered interior design excellence across multiple Radisson properties, enhancing brand consistency and luxury appeal.",
-        overviewList: [
-          [
-            "Elegant and functional spaces",
-            "Modern design trends applied",
-            "Precise execution of finishes",
-          ],
-          [
-            "Client coordination at each stage",
-            "Sustainability in material selection",
-            "Timely delivery",
-          ],
-        ],
-        info: {
-          "Client name": "Radisson Hotels Group",
-          Location: "Pan India",
-          Area: "Varies by property",
-          Budget: "$9,000,000",
-          Architect: "Radisson Design Partners",
-          Contractor: "Gaurav Sharma Constructions",
-          "Start date": "01 Apr, 2022",
-          "Delivery date": "31 Mar, 2024",
-        },
-        brochures: [
-          { name: "Brochure.PDF", url: "#" },
-          { name: "Brochure.DOC", url: "#" },
-        ],
-        sidebarBanner: "/assets/images/sidebar/3-270x369.jpg",
-      },
-      {
-        id: 9,
-        title: "Marriott Hotels",
-        subtitle: "Hospitality Interior Projects",
-        projectMainImage: "/assets/images/skyit/Sterling/Sterling5.jpeg",
-        description:
-          "Construction of itself, because it is pain some proper style design occur are pleasure",
-        breadcrumbImage: "/assets/images/skyit/Sterling/Sterling.jpeg",
-        subtitleDescription:
-          "Provide the best Construction services for our client with expert team, modern equipment, and quality materials",
-        summary:
-          "Hospitality interior projects for Marriott Hotels across India.",
-        images: [
-          "/assets/images/skyit/Sterling/Sterling.jpeg",
-          "/assets/images/skyit/Sterling/Sterling1.jpeg",
-          "/assets/images/skyit/Sterling/Sterling2.jpeg",
-          "/assets/images/skyit/Sterling/Sterling3.jpeg",
-          "/assets/images/skyit/Sterling/Sterling4.jpeg",
-        ],
-        features: [
-          "Premium hospitality interiors",
-          "Custom furniture and fittings",
-          "Luxury brand standard implementation",
-        ],
-        featuredImages: [
-          "/assets/images/single-service/2-1-265x185.jpg",
-          "/assets/images/single-service/2-2-265x185.jpg",
-          "/assets/images/single-service/2-3-265x185.jpg",
-          "/assets/images/single-service/2-4-265x185.jpg",
-        ],
-        overview:
-          "Executed Marriott hotel interiors with precision, quality, and brand alignment.",
-        overviewList: [
-          [
-            "Luxury interior detailing",
-            "Client-driven customization",
-            "Quality craftsmanship",
-          ],
-          [
-            "High durability materials",
-            "Perfect blend of design and function",
-            "On-time project completion",
-          ],
-        ],
-        info: {
-          "Client name": "Marriott Hotels Group",
-          Location: "Pan India",
-          Area: "Varies by property",
-          Budget: "$10,000,000",
-          Architect: "Marriott Design Partners",
-          Contractor: "Gaurav Sharma Constructions",
-          "Start date": "15 Jul, 2021",
-          "Delivery date": "31 Dec, 2023",
         },
         brochures: [
           { name: "Brochure.PDF", url: "#" },
