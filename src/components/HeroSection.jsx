@@ -89,10 +89,16 @@ const HeroSection = () => {
             <div className="col-lg-4 col-md-6">
               <div
                 className="banner-item text-white"
+              
                 style={{
-                  backgroundImage:
-                    "url('assets/images/banner/inner-bg/1-1.png')",
-                }}>
+                  backgroundColor:
+                    "#0B1E33",
+                }}
+                // style={{
+                //   backgroundImage:
+                //     "url('assets/images/banner/inner-bg/1-1.png')",
+                // }}
+                >
                 <div className="banner-content">
                   <h3 className="title mb-3">Top Rated</h3>
                   <p className="short-desc mb-0">
@@ -106,9 +112,14 @@ const HeroSection = () => {
               <div
                 className="banner-item text-white"
                 style={{
-                  backgroundImage:
-                    "url('assets/images/banner/inner-bg/1-2.png')",
-                }}>
+                  backgroundColor:
+                    "#7A7A7A",
+                }}
+                // style={{
+                //   backgroundImage:
+                //     "url('assets/images/banner/inner-bg/1-2.png')",
+                // }}
+                >
                 <div className="banner-content">
                   <h3 className="title mb-3">Best Quality</h3>
                   <p className="short-desc mb-0">
@@ -122,9 +133,14 @@ const HeroSection = () => {
               <div
                 className="banner-item text-white"
                 style={{
-                  backgroundImage:
-                    "url('assets/images/banner/inner-bg/1-3.png')",
-                }}>
+                  backgroundColor:
+                    "#0B1E33",
+                }}
+                // style={{
+                //   backgroundImage:
+                //     "url('assets/images/banner/inner-bg/1-1.png')",
+                // }}
+                >
                 <div className="banner-content">
                   <h3 className="title mb-3">Low Price</h3>
                   <p className="short-desc mb-0">

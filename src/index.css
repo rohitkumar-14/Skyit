@@ -19269,7 +19269,7 @@ input[type=checkbox]:checked+label:after {
 }
 
 .banner-style-3 .banner-content:before {
-    color: #0d2d62;
+    color: #7A7A7A;
     content: attr(data-count);
     display: block;
     position: absolute;
@@ -19282,7 +19282,7 @@ input[type=checkbox]:checked+label:after {
 }
 
 .banner-style-3 .banner-content.different-data-color:before {
-    color: #ff6e2b;
+    color: #0B1E33;
 }
 
 .banner-with-sticker {
