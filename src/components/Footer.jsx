@@ -10,7 +10,7 @@ const Footer = () => {
             >
                 <div className="container">
                     <div className="row">
-                        <div className="col-xl-3 col-lg-3">
+                        <div className="col-xl-6 col-lg-3">
                             <div className="widget-item text-hawkes-blue">
                                 <div className="footer-logo pb-5">
                                     <a href="#">
@@ -46,7 +46,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-xl-3 col-lg-3 col-sm-6 ps-lg-10 pt-8 pt-lg-0">
+                        {/* <div className="col-xl-3 col-lg-3 col-sm-6 ps-lg-10 pt-8 pt-lg-0">
                             <div className="widget-item">
                                 <h3 className="heading text-white mb-6">Quick Links</h3>
                                 <ul className="widget-list-item text-hawkes-blue">
@@ -67,7 +67,7 @@ const Footer = () => {
                                     </li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="col-xl-3 col-lg-4 pt-8 pt-lg-0">
                             <div className="widget-item">
                                 <h3 className="heading text-white mb-6">Contact Info</h3>
@@ -101,19 +101,20 @@ const Footer = () => {
                                     </a>
                                 </li>
                                 <li className="twitter">
-                                    <a href="#" data-tippy="Twitter" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder" style={{marginRight: "10px"}}>
+                                    <a href="#" data-tippy="Twitter" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder" style={{marginRight: "12px"}}>
                                         <i class="fa-brands fa-x-twitter"></i>
                                     </a>
                                 </li>
                                 <li className="instagram">
-                                    <a href="#" data-tippy="Instagram" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder" style={{marginRight: "10px"}}>
+                                    <a href="#" data-tippy="Instagram" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder" style={{marginRight: "12px"}}>
                                         <i class="fa-brands fa-instagram"></i>
                                     </a>
                                 </li>
                             </ul>
                         </div>
                         <div className="col-md-6 col-sm-8 align-self-center">
-                            <div className="copyright">
+                                    <div className="copyright">
+                            <a href="#">Terms & Conditions</a> | &nbsp;
                                 <span className="copyright-text">© 2022 OxyBuild Made with <i className="fa fa-heart text-danger"></i> by <a href="https://hasthemes.com/" rel="noopener" target="_blank">HasThemes</a> </span>
                             </div>
                         </div>

@@ -9,12 +9,24 @@ const About = () => {
   return (
     <>
       <div
-        class="breadcrumb-area breadcrumb-height"
+        class="breadcrumb-area breadcrumb-height position-relative"
         style={{
           backgroundImage: "url('assets/images/breadcrumb/bg/1.jpg')",
         }}>
-        <div class="container">
-          <div class="breadcrumb-content">
+          <div
+    className="overlay"
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
+      zIndex: 1,
+    }}
+  ></div>
+        <div class="container position-relative" style={{ zIndex: 2 }}>
+          <div class="breadcrumb-content text-white py-5">
             <span class="breadcrumb-sub-title">What we do</span>
             <h1 class="breadcrumb-title mb-1">About us</h1>
             <p class="breadcrumb-desc font-size-20">
@@ -25,7 +37,7 @@ const About = () => {
         </div>
       </div>
       <AboutArea />
-      <div class="banner banner-style-3">
+      <div class="banner banner-style-3" style={{marginBottom: "100px"}}>
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-md-6">
@@ -69,7 +81,48 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Counter />
+      <div className="counter-area pt-40">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-3 col-sm-6">
+              <div className="counter-item">
+                <h3 className="count mb-0" data-counterup-time="1500">
+                  985
+                </h3>
+                <h2 className="count-inner-text mb-0">985</h2>
+                <h4 className="count-title mb-0">Projects</h4>
+              </div>
+            </div>
+            <div className="col-lg-3 col-sm-6">
+              <div className="counter-item">
+                <h3 className="count mb-0" data-counterup-time="2000">
+                  527
+                </h3>
+                <h2 className="count-inner-text mb-0">527</h2>
+                <h4 className="count-title mb-0">Clients</h4>
+              </div>
+            </div>
+            <div className="col-lg-3 col-sm-6">
+              <div className="counter-item">
+                <h3 className="count mb-0" data-counterup-time="2500">
+                  856
+                </h3>
+                <h2 className="count-inner-text mb-0">856</h2>
+                <h4 className="count-title mb-0">Success</h4>
+              </div>
+            </div>
+            <div className="col-lg-3 col-sm-6">
+              <div className="counter-item">
+                <h3 className="count mb-0" data-counterup-time="3000">
+                  120
+                </h3>
+                <h2 className="count-inner-text mb-0">120</h2>
+                <h4 className="count-title mb-0">Awards</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* <ProjectArea /> */}
       <Team />
       <Testimonials />

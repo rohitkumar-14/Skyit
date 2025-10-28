@@ -1,6 +1,14 @@
 import React from "react";
 
 const BrandArea = () => {
+  const totalBrands = 10; // total images available
+
+  // Split into chunks of 5 items per row
+  const rows = [];
+  for (let i = 0; i < totalBrands; i += 5) {
+    rows.push([...Array(5)].map((_, j) => i + j + 1).filter(n => n <= totalBrands));
+  }
+
   return (
     <div
       className="brand-area pt-140 pb-6"
@@ -10,38 +18,23 @@ const BrandArea = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="brand-grid">
-              <div className="brand-row d-flex align-items-center flex-wrap mb-4">
-                {[...Array(4)].map((_, i) => (
-                  <a className="brand-item mx-3" href="#" key={i}>
-                    <img
-                      src={`/assets/images/skyit/clients/${i + 1}.png`}
-                      alt={`Brand ${i + 1}`}
-                    />
-                  </a>
-                ))}
-              </div>
-
-              <div className="d-flex align-items-center flex-wrap" style={{gap: "6rem"}}>
-                {[...Array(4)].map((_, i) => (
-                  <a className="brand-item mx-3" href="#" key={i + 5}>
-                    <img
-                      src={`/assets/images/skyit/clients/${i + 5}.png`}
-                      alt={`Brand ${i + 6}`}
-                    />
-                  </a>
-                ))}
-              </div>
-
-              <div className="d-flex align-items-center flex-wrap" style={{gap: "6rem"}}>
-                {[...Array(1)].map((_, i) => (
-                  <a className="brand-item mx-3" href="#" key={i + 6}>
-                    <img
-                      src={`/assets/images/skyit/clients/${i + 9}.png`}
-                      alt={`Brand ${i + 6}`}
-                    />
-                  </a>
-                ))}
-              </div>
+              {rows.map((row, rowIndex) => (
+                <div
+                  key={rowIndex}
+                  className="brand-row d-flex align-items-center justify-content-center flex-wrap mb-4"
+                  style={{ gap: "4rem" }} // adjust spacing as you like
+                >
+                  {row.map((num) => (
+                    <a className="brand-item" href="#" key={num}>
+                      <img
+                        src={`/assets/images/skyit/clients/${num}.png`}
+                        alt={`Brand ${num}`}
+                        style={{ maxWidth: "150px", height: "auto" }} // optional: size control
+                      />
+                    </a>
+                  ))}
+                </div>
+              ))}
             </div>
           </div>
         </div>

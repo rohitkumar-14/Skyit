@@ -3,24 +3,41 @@ import React from "react";
 const ConstructionImplementation = () => {
   return (
     <>
-      {/* Breadcrumb */}
       <div
-        className="breadcrumb-area breadcrumb-height"
-        style={{
-          backgroundImage: "url('/assets/images/breadcrumb/bg/1.jpg')",
-        }}
-      >
-        <div className="container">
-          <div className="breadcrumb-content">
-            <span className="breadcrumb-sub-title text-white">Our Services</span>
-            <h1 className="breadcrumb-title mb-1">Construction Implementation</h1>
-            <p className="breadcrumb-desc font-size-20 text-white">
-              Laying the foundation of success through precise planning,
-              systematic execution, and quality control.
-            </p>
-          </div>
-        </div>
-      </div>
+  className="breadcrumb-area breadcrumb-height position-relative"
+  style={{
+    backgroundImage:
+      "url('/assets/images/skyit/services/constructionimplementation.png')",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+  }}
+>
+  <div
+    className="overlay"
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
+      zIndex: 1,
+    }}
+  ></div>
+
+  <div className="container position-relative" style={{ zIndex: 2 }}>
+    <div className="breadcrumb-content text-white py-5">
+      <span className="breadcrumb-sub-title">Our Services</span>
+      <h1 className="breadcrumb-title mb-1">Construction Implementation</h1>
+      <p className="breadcrumb-desc font-size-20">
+        Laying the foundation of success through precise planning,
+        systematic execution, and quality control.
+      </p>
+    </div>
+  </div>
+</div>
+
 
       {/* Service Details */}
       <div className="single-service-area py-140">

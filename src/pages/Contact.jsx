@@ -3,11 +3,22 @@ import React from 'react'
 const Contact = () => {
   return (
     <>
-    <div class="breadcrumb-area breadcrumb-height" style={{
+    <div class="breadcrumb-area breadcrumb-height position-relative" style={{
       backgroundImage: "url('/assets/images/breadcrumb/bg/1.jpg')",
-    }}>
-            <div class="container">
-                <div class="breadcrumb-content">
+    }}><div
+    className="overlay"
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
+      zIndex: 1,
+    }}
+  ></div>
+            <div class="container position-relative" style={{ zIndex: 2 }}>
+                <div class="breadcrumb-content text-white py-5">
                     <span class="breadcrumb-sub-title">Contact us</span>
                     <h1 class="breadcrumb-title mb-1">Get in Touch</h1>
                     <p class="breadcrumb-desc font-size-20">Construction of itself, because it is pain some proper style design occur are pleasure</p>

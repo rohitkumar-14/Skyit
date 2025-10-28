@@ -4,12 +4,27 @@ const ProjectManagement = () => {
   return (
     <>
       <div
-        class="breadcrumb-area breadcrumb-height"
+        class="breadcrumb-area breadcrumb-height position-relative"
         style={{
-          backgroundImage: "url('/assets/images/breadcrumb/bg/1.jpg')",
+          backgroundImage: "url('/assets/images/skyit/services/projectmanagement.png",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover"
         }}>
-        <div class="container">
-          <div class="breadcrumb-content">
+           <div
+    className="overlay"
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
+      zIndex: 1,
+    }}
+  ></div>
+        <div class="container position-relative" style={{ zIndex: 2 }}>
+          <div class="breadcrumb-content text-white py-5">
             <span class="breadcrumb-sub-title">Our Services</span>
             <h1 class="breadcrumb-title mb-1">Project Management</h1>
             <p class="breadcrumb-desc font-size-20">

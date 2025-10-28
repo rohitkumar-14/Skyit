@@ -5,12 +5,26 @@ const SpecializedConstructionServices = () => {
     <>
       {/* Breadcrumb */}
       <div
-        className="breadcrumb-area breadcrumb-height"
+        className="breadcrumb-area breadcrumb-height position-relative"
         style={{
-          backgroundImage: "url('/assets/images/breadcrumb/bg/1.jpg')",
+          backgroundImage: "url('/assets/images/skyit/services/constructionspeiclaized.png')", backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover"
         }}>
-        <div className="container">
-          <div className="breadcrumb-content">
+          <div
+    className="overlay"
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
+      zIndex: 1,
+    }}
+  ></div>
+        <div className="container position-relative" style={{ zIndex: 2 }}>
+          <div className="breadcrumb-content text-white py-5">
             <span className="breadcrumb-sub-title">Our Services</span>
             <h1 className="breadcrumb-title mb-1">Specialized Construction</h1>
             <p className="breadcrumb-desc font-size-20">

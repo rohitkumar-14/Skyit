@@ -83,7 +83,7 @@ const HeroSection = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="banner pt-140">
+      <div className="banner pt-5 mt-5">
         <div className="container">
           <div className="row g-lg-9">
             <div className="col-lg-4 col-md-6">

@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutArea = () => {
   return (
-    <div className="about-area about-style-2 py-130">
+    <div className="about-area about-style-2 py-120">
   <div className="container">
     <div className="section-title-area style-01 pb-70">
       <div className="section-title-wrap">

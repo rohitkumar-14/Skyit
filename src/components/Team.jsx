@@ -7,7 +7,7 @@ import { teamMembers } from "../data/data";
 export default function Team() {
   
   return (
-    <div className="team-area py-140">
+    <div className="team-area py-120">
       <div className="container">
         <div className="section-title-area pb-70">
           <div className="section-title-wrap style-01">

@@ -105,7 +105,7 @@ const Navbar = () => {
 
     const navItems = [
         { text: "Home", link: "/" },
-        { text: "About Us", link: "about" },
+        { text: "About Us", link: "/about" },
         {
             text: "Services",
             link: "#", 

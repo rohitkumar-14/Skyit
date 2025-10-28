@@ -2,7 +2,7 @@ import React from 'react'
 
 const Counter = () => {
   return (
-      <div className="counter-area py-140">
+      <div className="counter-area pt-140">
         <div className="container">
           <div className="row">
             <div className="col-lg-3 col-sm-6">

@@ -9,34 +9,29 @@ import "swiper/css/pagination";
 const ServiceArea = () => {
   const services = [
     {
-      title: "Construction",
-      img: "/assets/images/service/medium-size/1-1-371x254.jpg",
+      title: "Construction Implementation",
+      img: "/assets/images/skyit/services/constructionimplementation.png",
       link: "/services/construction-implementation",
     },
     {
       title: "Project Management",
-      img: "/assets/images/service/medium-size/1-2-371x254.jpg",
+      img: "/assets/images/skyit/services/projectmanagement.png",
       link: "/services/project-management",
     },
     {
       title: "Pre-Design Activity",
-      img: "/assets/images/service/medium-size/1-3-371x254.jpg",
+      img: "/assets/images/skyit/services/predeisgn.png",
       link: "/services/pre-design",
     },
     {
-      title: "Construction Implementation",
-      img: "/assets/images/service/medium-size/1-1-371x254.jpg",
-      link: "/services/construction-implementation",
-    },
-    {
       title: "Specialized Construction",
-      img: "/assets/images/service/medium-size/1-2-371x254.jpg",
+      img: "/assets/images/skyit/services/constructionspeiclaized.png",
       link: "/services/specialized-construction",
     },
   ];
 
   return (
-    <div className="service-area py-140">
+    <div className="service-area py-40">
       <div className="container">
         <div className="section-title-area pb-70 d-flex justify-content-between align-items-center flex-wrap">
           <div className="section-title with-border pb-5 pb-lg-0">
@@ -49,8 +44,7 @@ const ServiceArea = () => {
             className="section-banner text-white align-self-center p-7"
             style={{
               backgroundImage: "url('/assets/images/service/bg/1-1.png')",
-            }}
-          >
+            }}>
             <h2 className="info mb-0">
               Do you have projects? <span>info@example.com</span>
             </h2>
@@ -73,12 +67,11 @@ const ServiceArea = () => {
             spaceBetween={30}
             loop={true}
             breakpoints={{
-              0: { slidesPerView: 1 },      
-              768: { slidesPerView: 2 },     
-              1024: { slidesPerView: 3 },    
+              0: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
             }}
-            className="service-slider swiper-arrow with-bg_white"
-          >
+            className="service-slider swiper-arrow with-bg_white">
             {services.map((service, idx) => (
               <SwiperSlide key={idx}>
                 <div className="service-item">
