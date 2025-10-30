@@ -41,7 +41,7 @@ export default function Team() {
                 <div className="team-item">
                   <div className="team-img">
                     <img
-                      className="img-full"
+                      className="img-full" style={{height: "250px"}}
                       src={member.img}
                       alt={member.name}
                     />
