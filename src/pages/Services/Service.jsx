@@ -1,7 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -132,23 +132,23 @@ const Service = () => {
                     <SwiperSlide>
                       <div className="service-item">
                         <div className="service-img">
-                          <a href="service">
+                          <Link to="service">
                             <img
                               src="/assets/images/service/medium-size/1-1-371x254.jpg"
                               alt="Service 1"
                             />
-                          </a>
+                          </Link>
                           <div className="add-action text-white">
                             <h2 className="title mb-0">
-                              <a href="single-service">Construction</a>
+                              <Link to="single-service">Construction</Link>
                             </h2>
                             <div className="icon">
-                              <a
+                              <Link
                                 className="text-lowercase"
-                                href="mailto://info@example.com"
+                                to="mailto://info@example.com"
                               >
                                 <i className="ion-ios-plus-empty"></i>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -159,23 +159,23 @@ const Service = () => {
                     <SwiperSlide>
                       <div className="service-item">
                         <div className="service-img">
-                          <a href="service">
+                          <Link to="service">
                             <img
                               src="/assets/images/service/medium-size/1-2-371x254.jpg"
                               alt="Service 2"
                             />
-                          </a>
+                          </Link>
                           <div className="add-action text-white">
                             <h2 className="title mb-0">
-                              <a href="single-service">Project Management</a>
+                              <Link to="single-service">Project Management</Link>
                             </h2>
                             <div className="icon">
-                              <a
+                              <Link
                                 className="text-lowercase"
-                                href="mailto://info@example.com"
+                                to="mailto://info@example.com"
                               >
                                 <i className="ion-ios-plus-empty"></i>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -186,23 +186,23 @@ const Service = () => {
                     <SwiperSlide>
                       <div className="service-item">
                         <div className="service-img">
-                          <a href="service">
+                          <Link to="service">
                             <img
                               src="/assets/images/service/medium-size/1-3-371x254.jpg"
                               alt="Service 3"
                             />
-                          </a>
+                          </Link>
                           <div className="add-action text-white">
                             <h2 className="title mb-0">
-                              <a href="single-service">Pre-Design Activity</a>
+                              <Link to="single-service">Pre-Design Activity</Link>
                             </h2>
                             <div className="icon">
-                              <a
+                              <Link
                                 className="text-lowercase"
-                                href="mailto://info@example.com"
+                                to="mailto://info@example.com"
                               >
                                 <i className="ion-ios-plus-empty"></i>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -240,7 +240,7 @@ const Service = () => {
                                 <h2 class="title mb-7">Full Project <br/> management</h2>
                                 <p class="desc font-size-20 mb-8">Construction of itself, because it is pain, but because some proper style design occur in toil and pain pleasure we have expert team some master plan fo the </p>
                                 <div class="button-wrap">
-                                    <a class="btn btn-custom btn-primary btn-white-hover" href="project.html">Learn more</a>
+                                    <Link class="btn btn-custom btn-primary btn-white-hover" to="/project">Learn more</Link>
                                 </div>
                             </div>
                             <div class="banner-sticker">
@@ -261,54 +261,54 @@ const Service = () => {
                         <div class="swiper-container brand-slider">
                             <div class="swiper-wrapper align-items-center">
                                 <div class="swiper-slide">
-                                    <a class="brand-item" href="#">
+                                    <Link class="brand-item" to="#">
                                         <img src="assets/images/brand/1.png" alt="Brand Image"/>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="brand-item" href="#">
+                                    <Link class="brand-item" to="#">
                                         <img src="assets/images/brand/2.png" alt="Brand Image"/>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="brand-item" href="#">
+                                    <Link class="brand-item" to="#">
                                         <img src="assets/images/brand/3.png" alt="Brand Image"/>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="brand-item" href="#">
+                                    <Link class="brand-item" to="#">
                                         <img src="assets/images/brand/4.png" alt="Brand Image"/>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="brand-item" href="#">
+                                    <Link class="brand-item" to="#">
                                         <img src="assets/images/brand/5.png" alt="Brand Image"/>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="brand-item" href="#">
+                                    <Link class="brand-item" to="#">
                                         <img src="assets/images/brand/6.png" alt="Brand Image"/>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="brand-item" href="#">
+                                    <Link class="brand-item" to="#">
                                         <img src="assets/images/brand/7.png" alt="Brand Image"/>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="brand-item" href="#">
+                                    <Link class="brand-item" to="#">
                                         <img src="assets/images/brand/8.png" alt="Brand Image"/>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="brand-item" href="#">
+                                    <Link class="brand-item" to="#">
                                         <img src="assets/images/brand/9.png" alt="Brand Image"/>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="brand-item" href="#">
+                                    <Link class="brand-item" to="#">
                                         <img src="assets/images/brand/10.png" alt="Brand Image"/>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div class="brand-pagination d-md-none"></div>
@@ -382,7 +382,7 @@ const Service = () => {
                                 <p class="font-size-20 mb-0">Construction of itself, because it is pain some <br/> some proper style design occur in toil and pain we have expert team some master</p>
                             </div>
                             <div class="button-wrap pt-2 pb-5 pb-md-0">
-                                <a class="btn btn-link with-underline text-secondary font-size-25 p-0" href="#">view more</a>
+                                <Link class="btn btn-link with-underline text-secondary font-size-25 p-0" to="#">view more</Link>
                             </div>
                         </div>
                     </div>

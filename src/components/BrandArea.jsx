@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom'
 const BrandArea = () => {
   const totalBrands = 10; // total images available
 
@@ -25,13 +25,13 @@ const BrandArea = () => {
                   style={{ gap: "4rem" }} // adjust spacing as you like
                 >
                   {row.map((num) => (
-                    <a className="brand-item" href="#" key={num}>
+                    <Link className="brand-item" to="#" key={num}>
                       <img
                         src={`/assets/images/skyit/clients/${num}.png`}
                         alt={`Brand ${num}`}
                         style={{ maxWidth: "150px", height: "auto" }} // optional: size control
                       />
-                    </a>
+                    </Link>
                   ))}
                 </div>
               ))}

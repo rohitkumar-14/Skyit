@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom'
 const ConstructionImplementation = () => {
   return (
     <>
@@ -171,25 +171,25 @@ const ConstructionImplementation = () => {
                 <div className="sidebar-widget sidebar-categories text-white mb-6">
                   <ul>
                     <li>
-                      <a href="/services/construction">Construction</a>
+                      <Link to="/services/construction">Construction</Link>
                     </li>
                     <li>
-                      <a href="/services/project-management">
+                      <Link to="/services/project-management">
                         Project Management
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/services/pre-design">Pre-Design Activity</a>
+                      <Link to="/services/pre-design">Pre-Design Activity</Link>
                     </li>
                     <li>
-                      <a href="/services/construction-implementation">
+                      <Link to="/services/construction-implementation">
                         Construction Implementation
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/services/specialized-construction">
+                      <Link to="/services/specialized-construction">
                         Specialized Construction
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -197,10 +197,10 @@ const ConstructionImplementation = () => {
                 <div className="sidebar-widget sidebar-download-brochure text-white mb-6">
                   <ul>
                     <li>
-                      <a href="#">Brochure.PDF</a>
+                      <Link to="#">Brochure.PDF</Link>
                     </li>
                     <li>
-                      <a href="#">Brochure.DOC</a>
+                      <Link to="#">Brochure.DOC</Link>
                     </li>
                   </ul>
                 </div>

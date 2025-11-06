@@ -4,7 +4,7 @@ import Counter from "../components/Counter";
 import ProjectArea from "../components/ProjectArea";
 import Team from "../components/Team";
 import Testimonials from "../components/Testimonials";
-
+import { Link } from 'react-router-dom'
 const About = () => {
   return (
     <>

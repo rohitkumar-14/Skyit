@@ -3,7 +3,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { teamMembers } from "../data/data";
-
+import { Link } from 'react-router-dom'
 export default function Team() {
   
   return (
@@ -41,37 +41,37 @@ export default function Team() {
                 <div className="team-item">
                   <div className="team-img">
                     <img
-                      className="img-full" style={{height: "250px"}}
+                      className="img-full" style={{height: "350px"}}
                       src={member.img}
                       alt={member.name}
                     />
                     <ul className="add-action text-white">
                       <li className="team-social-link-wrap">
-                        <a href="#">
+                        <Link to="#">
                           <i className="fa fa-share-alt"></i>
-                        </a>
+                        </Link>
                         <ul className="social-link">
                           <li className="facebook">
-                            <a href="#" data-tippy="Facebook">
+                            <Link to="#" data-tippy="Facebook">
                               <i className="fa fa-facebook"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li className="twitter">
-                            <a href="#" data-tippy="Twitter">
+                            <Link to="#" data-tippy="Twitter">
                               <i className="fa fa-twitter"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li className="instagram">
-                            <a href="#" data-tippy="Instagram">
+                            <Link to="#" data-tippy="Instagram">
                               <i className="fa fa-instagram"></i>
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </li>
                       <li className="mail-wrap">
-                        <a className="text-lowercase" href={`/team/${member.id}`}>
+                        <Link className="text-lowercase" to={`/team/${member.id}`}>
                           <i className="fa-solid fa-info fa-xs"></i>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>

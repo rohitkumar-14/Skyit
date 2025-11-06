@@ -2,20 +2,19 @@ import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import Breadcrumb from "../components/Breadcrumb";
 import { projectSections } from "../data/data";
-
 const Projects = () => {
   const { slug } = useParams(); 
   const [visible, setVisible] = useState(6);
 
   const category = projectSections.find((section) => section.slug === slug);
   const projects = category?.projects || [];
-
+  console.log(category,projects)
   const loadMore = () => {
     setVisible((prev) => prev + 6);
   };
 
   if (!category) return <p>Category not found</p>;
-  console.log(projects,"......");
+  
   
   return (
     <div>
@@ -23,7 +22,7 @@ const Projects = () => {
         title={category.category}
         subtitle="Our Projects"
         description="Explore our portfolio of completed and ongoing projects"
-        backgroundImage="/assets/images/breadcrumb/bg/1.jpg"
+        backgroundImage={category.mainBreadcrumbImage}
         overlayColor="rgba(0,0,0,0.5)"
       />
 

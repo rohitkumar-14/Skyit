@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <>
@@ -13,14 +13,14 @@ const Footer = () => {
                         <div className="col-xl-6 col-lg-3">
                             <div className="widget-item text-hawkes-blue">
                                 <div className="footer-logo pb-5">
-                                    <a href="#">
-                                        <img src="assets/images/logo/white.png" alt="Logo"/>
-                                    </a>
+                                    <Link to="#">
+                                        <img style={{width: "200px"}} src="assets/images/logo/designstyle1.png" alt="Logo"/>
+                                    </Link>
                                 </div>
                                 <p className="short-desc font-size-16 mb-5">Construction of itself, because it is are <br/> but because some proper style design is occur in toil and pain pleasure</p>
                                 <div className="inquary">
                                     <h5 className="text-primary">For inquary</h5>
-                                    <a href="tel://+12345-879-854">+12345 879 854</a>
+                                    <Link to="tel://+12345-879-854">+12345 879 854</Link>
                                 </div>
                             </div>
                         </div>
@@ -29,19 +29,19 @@ const Footer = () => {
                                 <h3 className="heading text-white mb-6">Information</h3>
                                 <ul className="widget-list-item text-hawkes-blue">
                                     <li>
-                                        <a href="#">About us</a>
+                                        <Link to="#">About us</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Our Services</a>
+                                        <Link to="#">Our Services</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Recent Projects</a>
+                                        <Link to="#">Recent Projects</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Our Team</a>
+                                        <Link to="#">Our Team</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Contact us</a>
+                                        <Link to="#">Contact us</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -51,19 +51,19 @@ const Footer = () => {
                                 <h3 className="heading text-white mb-6">Quick Links</h3>
                                 <ul className="widget-list-item text-hawkes-blue">
                                     <li>
-                                        <a href="#">Support Center</a>
+                                        <Link to="#">Support Center</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Offers & Promotion</a>
+                                        <Link to="#">Offers & Promotion</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Terms & Conditions</a>
+                                        <Link to="#">Terms & Conditions</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Payment Method</a>
+                                        <Link to="#">Payment Method</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Clients & Reviews</a>
+                                        <Link to="#">Clients & Reviews</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -96,35 +96,35 @@ const Footer = () => {
                         <div className="col-md-6 col-sm-4">
                             <ul className="social-link">
                                 <li className="facebook">
-                                    <a href="#" data-tippy="Facebook" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder" style={{marginRight: "8px"}}>
+                                    <Link to="#" data-tippy="Facebook" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder" style={{marginRight: ".5rem"}}>
                                         <i class="fa-brands fa-facebook-f"></i>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="twitter">
-                                    <a href="#" data-tippy="Twitter" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder" style={{marginRight: "12px"}}>
+                                    <Link to="#" data-tippy="Twitter" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder" style={{marginRight: ".75rem"}}>
                                         <i class="fa-brands fa-x-twitter"></i>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="instagram">
-                                    <a href="#" data-tippy="Instagram" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder" style={{marginRight: "12px"}}>
+                                    <Link to="#" data-tippy="Instagram" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder" style={{marginRight: ".75rem"}}>
                                         <i class="fa-brands fa-instagram"></i>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
                         <div className="col-md-6 col-sm-8 align-self-center">
                                     <div className="copyright">
-                            <a href="#">Terms & Conditions</a> | &nbsp;
-                                <span className="copyright-text">© 2022 OxyBuild Made with <i className="fa fa-heart text-danger"></i> by <a href="https://hasthemes.com/" rel="noopener" target="_blank">HasThemes</a> </span>
+                            <Link to="#">Terms & Conditions</Link> | &nbsp;
+                                <span className="copyright-text">© 2025 Copyrights <i className="fa fa-heart text-danger"></i> by <Link to="https://Skyit.com/" rel="noopener" target="_blank">Skyit</Link> </span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <a className="scroll-to-top" href="">
+        <Link className="scroll-to-top" to="">
             <i className="ion-android-arrow-up"></i>
-        </a>
+        </Link>
     </>
   )
 }

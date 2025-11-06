@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-
+import { Link } from 'react-router-dom'
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -76,17 +76,17 @@ const ServiceArea = () => {
               <SwiperSlide key={idx}>
                 <div className="service-item">
                   <div className="service-img">
-                    <a href={service.link}>
+                    <Link to={service.link}>
                       <img src={service.img} alt={service.title} />
-                    </a>
+                    </Link>
                     <div className="add-action text-white">
                       <h2 className="title text-[25px] mb-0">
-                        <a href={service.link}>{service.title}</a>
+                        <Link to={service.link}>{service.title}</Link>
                       </h2>
                       <div className="icon">
-                        <a className="text-lowercase" href={service.link}>
+                        <Link className="text-lowercase" to={service.link}>
                           <i className="ion-ios-plus-empty"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

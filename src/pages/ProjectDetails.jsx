@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { projectSections } from "../data/data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-
+import { Link } from 'react-router-dom'
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -119,7 +119,7 @@ const ProjectDetails = () => {
                   <ul>
                     {project?.brochures?.map((file, i) => (
                       <li key={i}>
-                        <a href={file.url}>{file.name}</a>
+                        <Link to={file.url}>{file.name}</Link>
                       </li>
                     ))}
                   </ul>

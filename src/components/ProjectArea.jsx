@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-
+import { Link } from 'react-router-dom'
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -15,9 +15,9 @@ const ProjectArea = () => {
           backgroundPosition: "right",
         }}>
         <div className="button-wrap text-end">
-          <a className="btn btn-project" href="/project">
+          <Link className="btn btn-project" to="/project">
             <span>View More</span>
-          </a>
+          </Link>
         </div>
 
         <div className="container-fluid p-0">
@@ -57,18 +57,18 @@ const ProjectArea = () => {
               className="project-slider">
               <SwiperSlide>
                 <div className="project-item">
-                  <a
+                  <Link
                     className="project-img"
-                    href="/project/hospitality-sector-projects">
+                    to="/project/hospitality-sector-projects">
                     <img
                       src="/assets/images/skyit/leela/LEELA.jpg"
                       alt="Project Image"
                     />
-                  </a>
+                  </Link>
                   <div className="project-content">
                     <span className="sub-title">HOSPITALITY SECTOR</span>
                     <h3 className="title mb-0">
-                      <a href="/project">The Leela Palace Udaipur</a>
+                      <Link to="/project">The Leela Palace Udaipur</Link>
                     </h3>
                     <span>Completed Project</span>
                   </div>
@@ -76,16 +76,16 @@ const ProjectArea = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="project-item">
-                  <a className="project-img" href="/project/residential-projects">
+                  <Link className="project-img" to="/project/residential-projects">
                     <img
                       src="/assets/images/skyit/ananta/ananta.jpeg"
                       alt="Project Image"
                     />
-                  </a>
+                  </Link>
                   <div className="project-content">
                     <span className="sub-title">RESIDENTIAL</span>
                     <h3 className="title mb-0">
-                      <a href="/project">Ananta Aspire</a>
+                      <Link to="/project">Ananta Aspire</Link>
                     </h3>
                     <span>Ongoing Project</span>
                   </div>
@@ -93,16 +93,16 @@ const ProjectArea = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="project-item">
-                  <a className="project-img" href="/project/logistics-industrial-projects">
+                  <Link className="project-img" to="/project/logistics-industrial-projects">
                     <img
                       src="/assets/images/project/medium-size/1-2-405x474.jpg"
                       alt="Project Image"
                     />
-                  </a>
+                  </Link>
                   <div className="project-content">
                     <span className="sub-title">LOGISTICS & INDUSTRIAL</span>
                     <h3 className="title mb-0">
-                      <a href="/project">Pragati One Logistic Park</a>
+                      <Link to="/project">Pragati One Logistic Park</Link>
                     </h3>
                     <span>Completed Project</span>
                   </div>
@@ -111,19 +111,19 @@ const ProjectArea = () => {
 
               <SwiperSlide>
                 <div className="project-item">
-                  <a className="project-img" href="/project/logistics-industrial-projects">
+                  <Link className="project-img" to="/project/logistics-industrial-projects">
                     <img
                       src="/assets/images/project/medium-size/1-3-405x474.jpg"
                       alt="Project Image"
                     />
-                  </a>
+                  </Link>
                   <div className="project-content">
                     <span className="sub-title">Industrial Development</span>
                     <h3 className="title mb-0">
-                      <a href="/project">
+                      <Link to="/project">
                         Avantee Mega Food <br />
                         Park Pvt Ltd
-                      </a>
+                      </Link>
                     </h3>
                     <span>Completed Project</span>
                   </div>
@@ -132,16 +132,16 @@ const ProjectArea = () => {
 
               <SwiperSlide>
                 <div className="project-item">
-                  <a className="project-img" href="/project/corporate-commercial-projects">
+                  <Link className="project-img" to="/project/corporate-commercial-projects">
                     <img
                       src="/assets/images/project/medium-size/1-4-405x474.jpg"
                       alt="Project Image"
                     />
-                  </a>
+                  </Link>
                   <div className="project-content">
                     <span className="sub-title">CORPORATE & COMMERCIAL</span>
                     <h3 className="title mb-0">
-                      <a href="/project">Godrej Sales Office</a>
+                      <Link to="/project">Godrej Sales Office</Link>
                     </h3>
                     <span>Interior Project</span>
                   </div>
@@ -150,16 +150,16 @@ const ProjectArea = () => {
 
               <SwiperSlide>
                 <div className="project-item">
-                  <a className="project-img" href="/project/healthcare-projects">
+                  <Link className="project-img" to="/project/healthcare-projects">
                     <img
                       src="/assets/images/project/medium-size/1-6-405x474.jpg"
                       alt="Project Image"
                     />
-                  </a>
+                  </Link>
                   <div className="project-content">
                     <span className="sub-title">HEALTHCARE</span>
                     <h3 className="title mb-0">
-                      <a href="/project">Fortis Hospitals</a>
+                      <Link to="/project">Fortis Hospitals</Link>
                     </h3>
                     <span>Completed Project</span>
                   </div>
@@ -167,16 +167,16 @@ const ProjectArea = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="project-item">
-                  <a className="project-img" href="/project/entertainment-multiplex-projects">
+                  <Link className="project-img" to="/project/entertainment-multiplex-projects">
                     <img
                       src="/assets/images/project/medium-size/1-6-405x474.jpg"
                       alt="Project Image"
                     />
-                  </a>
+                  </Link>
                   <div className="project-content">
                     <span className="sub-title">ENTERTAINMENT & MULTIPLEX</span>
                     <h3 className="title mb-0">
-                      <a href="/project">Multiplex Projects</a>
+                      <Link to="/project">Multiplex Projects</Link>
                     </h3>
                     <span>Completed Project</span>
                   </div>
@@ -184,16 +184,16 @@ const ProjectArea = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="project-item">
-                  <a className="project-img" href="/project/educational-sector-projects">
+                  <Link className="project-img" to="/project/educational-sector-projects">
                     <img
                       src="/assets/images/project/medium-size/1-6-405x474.jpg"
                       alt="Project Image"
                     />
-                  </a>
+                  </Link>
                   <div className="project-content">
                     <span className="sub-title">EDUCATIONAL SECTOR</span>
                     <h3 className="title mb-0">
-                      <a href="/project">Educational Institute</a>
+                      <Link to="/project">Educational Institute</Link>
                     </h3>
                     <span>Completed Project</span>
                   </div>
@@ -201,20 +201,20 @@ const ProjectArea = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="project-item">
-                  <a className="project-img" href="/project/urban-development-smart-city-projects">
+                  <Link className="project-img" to="/project/urban-development-smart-city-projects">
                     <img
                       src="/assets/images/project/medium-size/1-6-405x474.jpg"
                       alt="Project Image"
                     />
-                  </a>
+                  </Link>
                   <div className="project-content">
                     <span className="sub-title">
                       URBAN DEVELOPMENT & SMART CITY
                     </span>
                     <h3 className="title mb-0">
-                      <a href="/project">
+                      <Link to="/project">
                         Pipliyapala Lakefront Revival Project
-                      </a>
+                      </Link>
                     </h3>
                     <span>Design Competition Project</span>
                   </div>

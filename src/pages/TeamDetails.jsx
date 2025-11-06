@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { Link } from 'react-router-dom'
 import { teamMembers } from "../data/data";
 const TeamDetails = () => {
   const { id } = useParams();

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom'
 const ProjectManagement = () => {
   return (
     <>
@@ -115,32 +115,32 @@ const ProjectManagement = () => {
                 <div class="sidebar-widget sidebar-categories text-white mb-6">
                   <ul>
                     <li>
-                      <a href="#">Construction</a>
+                      <Link to="#">Construction</Link>
                     </li>
                     <li>
-                      <a href="#">Architecture</a>
+                      <Link to="#">Architecture</Link>
                     </li>
                     <li>
-                      <a href="#">Renovation</a>
+                      <Link to="#">Renovation</Link>
                     </li>
                     <li>
-                      <a href="#">Concrete Supply</a>
+                      <Link to="#">Concrete Supply</Link>
                     </li>
                     <li>
-                      <a href="#">Laminate Floor</a>
+                      <Link to="#">Laminate Floor</Link>
                     </li>
                     <li>
-                      <a href="#">Project Planning</a>
+                      <Link to="#">Project Planning</Link>
                     </li>
                   </ul>
                 </div>
                 <div class="sidebar-widget sidebar-download-brochure text-white mb-6">
                   <ul>
                     <li>
-                      <a href="#">Brochure.PDF</a>
+                      <Link to="#">Brochure.PDF</Link>
                     </li>
                     <li>
-                      <a href="#">Brochure.DOC</a>
+                      <Link to="#">Brochure.DOC</Link>
                     </li>
                   </ul>
                 </div>

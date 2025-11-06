@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
   return (
@@ -55,19 +56,19 @@ const Contact = () => {
                                     <ul>
                                         <li>
                                             Phone:
-                                            <a href="tel://+096-12458-875-895">+12345 879 854</a>
+                                            <Link to="tel://+096-12458-875-895">+12345 879 854</Link>
                                         </li>
                                         <li>
                                             Fax:
-                                            <a href="tel://+096-12547-895-874">(+096) 12547 895 874</a>
+                                            <Link to="tel://+096-12547-895-874">(+096) 12547 895 874</Link>
                                         </li>
                                         <li>
                                             Email:
-                                            <a class="text-lowercase" href="mailto://info@example.com">info@example.com</a>
+                                            <Link class="text-lowercase" to="mailto://info@example.com">info@example.com</Link>
                                         </li>
                                         <li>
                                             Web:
-                                            <a class="text-lowercase" href="mailto://www.example.com">www.example.com</a>
+                                            <Link class="text-lowercase" to="mailto://www.example.com">www.example.com</Link>
                                         </li>
                                     </ul>
                                 </div>

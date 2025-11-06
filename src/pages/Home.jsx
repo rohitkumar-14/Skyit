@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-
+import { Link } from 'react-router-dom'
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -58,11 +58,11 @@ const Home = () => {
                     efforts, all guided by the Leela Palace team.
                   </p>
                   <div className="button-wrap">
-                    <a
+                    <Link
                       className="btn btn-custom btn-primary btn-white-hover"
-                      href="project.html">
+                      to="project.html">
                       Learn more
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="banner-sticker">

@@ -3,7 +3,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
+import { Link } from 'react-router-dom'
 export default function BlogSlider() {
   const blogs = [
     {
@@ -12,7 +12,7 @@ export default function BlogSlider() {
       description:
         "Construction of itself, because it is pain because some proper style design",
       image: "/assets/images/blog/medium-size/1-1-370x260.jpg",
-      link: "blog.html",
+      link: "blog",
       comments: 35,
     },
     {
@@ -21,7 +21,7 @@ export default function BlogSlider() {
       description:
         "Construction of itself, because it is pain because some proper style design",
       image: "/assets/images/blog/medium-size/1-2-370x260.jpg",
-      link: "blog.html",
+      link: "blog",
       comments: 35,
     },
     {
@@ -30,7 +30,7 @@ export default function BlogSlider() {
       description:
         "Construction of itself, because it is pain because some proper style design",
       image: "/assets/images/blog/medium-size/1-3-370x260.jpg",
-      link: "blog.html",
+      link: "blog",
       comments: 35,
     },
   ];
@@ -77,27 +77,27 @@ export default function BlogSlider() {
               {blogs.map((blog, index) => (
                 <SwiperSlide key={index}>
                   <div className="blog-item">
-                    <a className="blog-img" href={blog.link}>
+                    <Link className="blog-img" to={blog.link}>
                       <img
                         className="img-full"
                         src={blog.image}
                         alt={blog.title}
                       />
-                    </a>
+                    </Link>
                     <div className="blog-content">
                       <span className="blog-meta">{blog.meta}</span>
                       <h3 className="title mb-2">
-                        <a href={blog.link}>{blog.title}</a>
+                        <Link to={blog.link}>{blog.title}</Link>
                       </h3>
                       <p className="mb-4">{blog.description}</p>
                       <ul className="blog-button-wrap">
                         <li>
-                          <a className="btn btn-link p-0" href={blog.link}>
+                          <Link className="btn btn-link p-0" to={blog.link}>
                             Read more
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="#">{blog.comments} Comments</a>
+                          <Link to="#">{blog.comments} Comments</Link>
                         </li>
                       </ul>
                     </div>

@@ -3,6 +3,7 @@ export const projectSections = [
     id: 1,
     slug: "hospitality-sector-projects",
     category: "HOSPITALITY SECTOR PROJECTS",
+    mainBreadcrumbImage: "/assets/images/skyit/projects/hospitality.jpg",
     projects: [
       {
         id: 1,
@@ -10,7 +11,7 @@ export const projectSections = [
         subtitle: "Luxury Hospitality Project",
         description:
           "Construction of itself, because it is pain some proper style design occur are pleasure",
-        breadcrumbImage: "/assets/images/skyit/leela/LEELAPALACE.jpg",
+        breadcrumbImage: "/assets/images/skyit/projects/LEELAPALACE.jpg",
         projectMainImage: "/assets/images/skyit/leela/LEELA.jpg",
         subtitleDescription:
           "Provide the best Construction services for our client with expert team, modern equipment, and quality materials",
@@ -552,6 +553,7 @@ export const projectSections = [
     id: 2,
     slug: "logistics-industrial-projects",
     category: "LOGISTICS & INDUSTRIAL PROJECTS",
+    mainBreadcrumbImage: "/assets/images/skyit/projects/Logistics.jpg",
     projects: [
       {
         id: 10,
@@ -919,6 +921,7 @@ export const projectSections = [
     id: 3,
     slug: "corporate-commercial-projects",
     category: "CORPORATE & COMMERCIAL PROJECTS",
+    mainBreadcrumbImage: "/assets/images/skyit/projects/corporate.jpg",
     projects: [
       {
         id: 16,
@@ -1286,6 +1289,7 @@ export const projectSections = [
     id: 4,
     slug: "residential-projects",
     category: "RESIDENTIAL PROJECTS",
+    mainBreadcrumbImage: "/assets/images/skyit/projects/residential.jpg",
     projects: [
       {
         id: 22,
@@ -1521,6 +1525,7 @@ export const projectSections = [
     id: 5,
     slug: "healthcare-projects",
     category: "HEALTHCARE PROJECTS",
+    mainBreadcrumbImage: "/assets/images/skyit/projects/healthcare.jpg",
     projects: [
       {
         id: 26,
@@ -1635,6 +1640,7 @@ export const projectSections = [
     id: 6,
     slug: "entertainment-multiplex-projects",
     category: "ENTERTAINMENT & MULTIPLEX",
+    mainBreadcrumbImage: "/assets/images/skyit/projects/Multiplex.jpg",
     projects: [
       {
         id: 28,
@@ -1643,7 +1649,7 @@ export const projectSections = [
         description:
           "A series of entertainment multiplex projects that combine advanced construction technology with premium finishing, creating luxurious movie and leisure experiences.",
         breadcrumbImage: "/assets/images/skyit/multiplex/multiplex1.jpg",
-        projectMainImage: "/assets/images/skyit/multiplex/multiplex-main.jpg",
+        projectMainImage: "/assets/images/skyit/mainmutiplex.avif",
         subtitleDescription:
           "Executed by Anupam Bajpai’s team with a focus on quality construction, acoustics, and audience comfort.",
         summary:
@@ -1696,6 +1702,7 @@ export const projectSections = [
     id: 7,
     slug: "educational-sector-projects",
     category: "EDUCATIONAL SECTOR",
+    mainBreadcrumbImage: "/assets/images/skyit/projects/education.jpg",
     projects: [
       {
         id: 29,
@@ -1756,6 +1763,7 @@ export const projectSections = [
     id: 8,
     slug: "urban-development-smart-city-projects",
     category: "URBAN DEVELOPMENT & SMART CITY",
+    mainBreadcrumbImage: "/assets/images/skyit/projects/urban.png",
     projects: [
       {
         id: 30,
@@ -1835,39 +1843,39 @@ export const teamMembers = [
     img: "/assets/images/skyit/teams/aureshgarg.png",
     bio: `Gauresh Garg, is B. Arch from MDU holding license no CA/2009/46631, Member of the Council of Architecture &​ Member of the Indian Institute of Architects​. Active Participant in seminars/ meetings/ lectures of​ architectural/interiors interest​ trained with finest firms of national/ international repute.​ Worked as consultant at reputed Architectural Firms of NCR ​With a work experience of over 15 years, he has  worked on a variety of architecture and interior design projects spanning residential, commercial, industrial,  healthcare and hospitality projects since 2008,.​He is passionate about the field and is driven by his constant  urge to innovate and uplift the standards of architecture  practiced in the country`,
   },
-  {
-    id: 4,
-    name: "Krishan Sharma",
-    role: "Senior Architectural Advisor",
-    img: "/assets/images/team/medium-size/1-4-210x341.jpg",
-    bio: `Krishan Sharma, is an accomplished architect with a rich educational and professional background. He holds a Bachelor of Architecture from the School of Planning and Architecture in Bhopal, India, and a Master of Architecture from University College London. Krishan has extensive experience working with renowned firms such as SASI Studio in London, Gerber Architekten in Berlin, and Studio Symbiosis in India. His portfolio includes diverse projects in architecture, interior design, and urban design, where he skillfully merges traditional and modern elements to create sustainable and functional spaces. His international experience and commitment to sustainability drive the innovative and impactful work.`,
-  },
-  {
-    id: 5,
-    name: "Lucky Ojha",
-    role: "Project In-charge — Interior Fit-out",
-    img: "/assets/images/team/medium-size/1-5-210x341.jpg",
-    bio: `Lucky Ojha, is an accomplished Manager with a rich educational and professional background. He brings 16+ years of experience in the interior fit-out industry, with in-depth knowledge across the field. His key strengths lie in operations, consulting, and domain expertise in the planning, design, and execution of ultra-modern projects. He has rendered his services to several prestigious clients, including Hewitt (Pan India), Taj Hotels, Radisson Hotels, Marriott Hotels, WNS Offices, Ericsson, American Express, Fortis Hospitals, various residential projects, and many more.`,
-  },
-  {
-    id: 6,
-    name: "Pooja Sandhu",
-    role: "Head: Administration & HR",
-    img: "/assets/images/team/medium-size/1-6-210x341.jpg",
-    bio: `Pooja Sandhu, is M.Tech CSE & MBA HR & Finance; having 19+ years of experience into Construction & Education industry, having independent hand holding of Govt & Non Govt Project also having a positive reputation among those clients due to her owner ship, responsible attitude, by delivering consistent, desired & positive results & always become more energetic & focused towards mission statements.`,
-  },
-  {
-    id: 7,
-    name: "Rajesh Raman",
-    role: "Manager, MEP",
-    img: "/assets/images/team/medium-size/1-7-210x341.jpg",
-    bio: `Rajesh Raman, has 26 years of experience in engineering department. His key skills includes operations, consulting domain expertise in Planning, Design and Execution of Ultra modern projects, MEP, Internal & External Electrical distribution system, Switch yards & Transmission Lines, Lighting, Fire Alarms, Lighting Management and Harvesting for green buildings in major Textile, Food Parks`,
-  },
-  {
-    id: 8,
-    name: "Sandeep Agarwal",
-    role: "Finance Head",
-    img: "/assets/images/team/medium-size/1-8-210x341.jpg",
-    bio: `Sandeep Agrawal Accomplished finance leader with over 18 years of experience in strategic financial planning, project finance, capital structuring, budgeting, risk management, and investor relations. Proven expertise in managing financial operations for large-scale infrastructure, construction, and industrial ventures. Known for delivering fiscal discipline, optimizing working capital, and supporting aggressive growth targets.`,
-  },
+  // {
+  //   id: 4,
+  //   name: "Krishan Sharma",
+  //   role: "Senior Architectural Advisor",
+  //   img: "/assets/images/team/medium-size/1-4-210x341.jpg",
+  //   bio: `Krishan Sharma, is an accomplished architect with a rich educational and professional background. He holds a Bachelor of Architecture from the School of Planning and Architecture in Bhopal, India, and a Master of Architecture from University College London. Krishan has extensive experience working with renowned firms such as SASI Studio in London, Gerber Architekten in Berlin, and Studio Symbiosis in India. His portfolio includes diverse projects in architecture, interior design, and urban design, where he skillfully merges traditional and modern elements to create sustainable and functional spaces. His international experience and commitment to sustainability drive the innovative and impactful work.`,
+  // },
+  // {
+  //   id: 5,
+  //   name: "Lucky Ojha",
+  //   role: "Project In-charge — Interior Fit-out",
+  //   img: "/assets/images/team/medium-size/1-5-210x341.jpg",
+  //   bio: `Lucky Ojha, is an accomplished Manager with a rich educational and professional background. He brings 16+ years of experience in the interior fit-out industry, with in-depth knowledge across the field. His key strengths lie in operations, consulting, and domain expertise in the planning, design, and execution of ultra-modern projects. He has rendered his services to several prestigious clients, including Hewitt (Pan India), Taj Hotels, Radisson Hotels, Marriott Hotels, WNS Offices, Ericsson, American Express, Fortis Hospitals, various residential projects, and many more.`,
+  // },
+  // {
+  //   id: 6,
+  //   name: "Pooja Sandhu",
+  //   role: "Head: Administration & HR",
+  //   img: "/assets/images/team/medium-size/1-6-210x341.jpg",
+  //   bio: `Pooja Sandhu, is M.Tech CSE & MBA HR & Finance; having 19+ years of experience into Construction & Education industry, having independent hand holding of Govt & Non Govt Project also having a positive reputation among those clients due to her owner ship, responsible attitude, by delivering consistent, desired & positive results & always become more energetic & focused towards mission statements.`,
+  // },
+  // {
+  //   id: 7,
+  //   name: "Rajesh Raman",
+  //   role: "Manager, MEP",
+  //   img: "/assets/images/team/medium-size/1-7-210x341.jpg",
+  //   bio: `Rajesh Raman, has 26 years of experience in engineering department. His key skills includes operations, consulting domain expertise in Planning, Design and Execution of Ultra modern projects, MEP, Internal & External Electrical distribution system, Switch yards & Transmission Lines, Lighting, Fire Alarms, Lighting Management and Harvesting for green buildings in major Textile, Food Parks`,
+  // },
+  // {
+  //   id: 8,
+  //   name: "Sandeep Agarwal",
+  //   role: "Finance Head",
+  //   img: "/assets/images/team/medium-size/1-8-210x341.jpg",
+  //   bio: `Sandeep Agrawal Accomplished finance leader with over 18 years of experience in strategic financial planning, project finance, capital structuring, budgeting, risk management, and investor relations. Proven expertise in managing financial operations for large-scale infrastructure, construction, and industrial ventures. Known for delivering fiscal discipline, optimizing working capital, and supporting aggressive growth targets.`,
+  // },
 ];

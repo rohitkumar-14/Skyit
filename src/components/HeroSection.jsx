@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
@@ -33,16 +34,16 @@ const HeroSection = () => {
                     proper style design occur in which toil and pain pleasure.
                   </p> */}
                   <div className="button-wrap">
-                    <a
+                    <Link
                       className="btn btn-custom btn-secondary btn-white-hover me-3"
-                      href="project.html">
+                      to="/project">
                       Learn more
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       className="btn btn-custom btn-primary btn-white-hover"
-                      href="contact.html">
+                      to="/contact">
                       Contact us
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -66,16 +67,16 @@ const HeroSection = () => {
                     proper style design occur in which toil and pain pleasure.
                   </p> */}
                   <div className="button-wrap">
-                    <a
+                    <Link
                       className="btn btn-custom btn-secondary btn-white-hover me-3"
-                      href="project.html">
+                      to="#">
                       Learn more
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       className="btn btn-custom btn-primary btn-white-hover"
-                      href="contact.html">
+                      to="/contact">
                       Contact us
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -90,20 +91,21 @@ const HeroSection = () => {
               <div
                 className="banner-item text-white"
               
-                style={{
-                  backgroundColor:
-                    "#0B1E33",
+                 style={{
+                  backgroundImage:
+                    "url('assets/images/skyit/home/Card1@3x.png')",
+                   backgroundSize: "contain"
                 }}
+
                 // style={{
                 //   backgroundImage:
                 //     "url('assets/images/banner/inner-bg/1-1.png')",
                 // }}
                 >
                 <div className="banner-content">
-                  <h3 className="title mb-3">Top Rated</h3>
+                  <h3 className="title mb-3">80+ years of experience</h3>
                   <p className="short-desc mb-0">
-                    Top rated construction packages we provide page editors now
-                    use Lorem as their default model text
+                    Our work is collective knowledge of civil and design years and years of expereince combined in one.
                   </p>
                 </div>
               </div>
@@ -111,9 +113,10 @@ const HeroSection = () => {
             <div className="col-lg-4 col-md-6 pt-6 pt-md-0">
               <div
                 className="banner-item text-white"
-                style={{
-                  backgroundColor:
-                    "#7A7A7A",
+                 style={{
+                  backgroundImage:
+                    "url('assets/images/skyit/home/Card2@3x.png')",
+                     backgroundSize: "contain"
                 }}
                 // style={{
                 //   backgroundImage:
@@ -121,10 +124,9 @@ const HeroSection = () => {
                 // }}
                 >
                 <div className="banner-content">
-                  <h3 className="title mb-3">Best Quality</h3>
+                  <h3 className="title mb-3">Civil at its best</h3>
                   <p className="short-desc mb-0">
-                    Quality is the construction packages we provide page editors
-                    now use Lorem as their default model text
+                    We give best quality of material, best design and best craftmanship, with handover as smooth as butter
                   </p>
                 </div>
               </div>
@@ -132,17 +134,18 @@ const HeroSection = () => {
             <div className="col-lg-4 col-md-6 pt-6 pt-lg-0">
               <div
                 className="banner-item text-white"
-                style={{
-                  backgroundColor:
-                    "#0B1E33",
-                }}
                 // style={{
-                //   backgroundImage:
-                //     "url('assets/images/banner/inner-bg/1-1.png')",
+                //   backgroundColor:
+                //     "#0B1E33",
                 // }}
+                style={{
+                  backgroundImage:
+                    "url('assets/images/skyit/home/Card3@3x.png')",
+                     backgroundSize: "contain"
+                }}
                 >
                 <div className="banner-content">
-                  <h3 className="title mb-3">Low Price</h3>
+                  <h3 className="title mb-3">Dreams in budget</h3>
                   <p className="short-desc mb-0">
                     Pricing is the construction packages we provide page editors
                     now use Lorem as their default model text

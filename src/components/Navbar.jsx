@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import darkLogo from "../../public/assets/images/logo/dark.png";
 import lightLogo from "../../public/assets/images/logo/light.png";
-
+import { Link } from 'react-router-dom'
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [mobileSubMenuOpen, setMobileSubMenuOpen] = useState({});
@@ -66,8 +66,8 @@ const Navbar = () => {
                 className={`drop-holder ${hasSubMenu ? "menu-item-has-children" : ""} ${
                     isOpen ? "menu-open" : ""
                 }`}>
-                <a
-                    href={item.link || "#"}
+                <Link
+                    to={item.link || "#"}
                     onClick={hasSubMenu ? (e) => handleMobileSubMenuToggle(e, menuItemKey) : undefined}
                     style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
                 >
@@ -82,7 +82,7 @@ const Navbar = () => {
                             <i className={`ion-ios-arrow-${isOpen ? "up" : "down"}`}></i>
                         </button>
                     )}
-                </a>
+                </Link>
 
                 {hasSubMenu && (
                     <ul
@@ -169,20 +169,22 @@ const Navbar = () => {
                             <div className="header-top-right text-end">
                                 <div className="contact-number d-flex align-items-center">
                                     <i className="fa-regular fa-envelope text-white me-2"></i>
-                                    <a
-                                        href="mailto:info@example.com"
+                                    <Link
+                                        to="mailto:info@example.com"
                                         className="text-white text-decoration-none">
                                         info@example.com
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
 
                         <div className="col-sm-6 d-block d-lg-none">
                             <div className="header-logo d-flex align-items-center justify-content-between w-100">
-                                <a href="/" className="text-white text-decoration-none">
-                                    <h1 className="h5 mb-0 text-white">SKYIT CONSTRUCTION PVT LTD </h1>
-                                </a>
+                                <div class="header-fixed-logo">
+                            <Link to="/">
+                                <img src="assets/images/logo/designstyle1.png" alt="Header Logo"/>
+                            </Link>
+                        </div>
                                 <button
                                     onClick={toggleMobileMenu}
                                     className="border-0 bg-transparent pl-0"
@@ -199,7 +201,7 @@ const Navbar = () => {
                 className="main-header header-sticky"
                 data-bg-color={stickyHeaderBg}
                 ref={mainHeaderRef}
-                style={{ backgroundColor: stickyHeaderBg }}>
+                style={{ backgroundColor: stickyHeaderBg,minHeight:"100px" }}>
                 <div className="container">
                     <div className="main-header_nav">
                         <div className="row align-items-center">
@@ -213,14 +215,14 @@ const Navbar = () => {
                                                     className={`drop-holder ${
                                                         item.subItems ? "drop-holder" : ""
                                                     }`}>
-                                                    <a href={item.link}>
+                                                    <Link to={item.link}>
                                                         <span>{item.text}</span>
-                                                    </a>
+                                                    </Link>
                                                     {item.subItems && (
                                                         <ul className="drop-menu">
                                                             {item.subItems.map((subItem) => (
                                                                 <li key={subItem.text}>
-                                                                    <a href={subItem.link}>{subItem.text}</a>
+                                                                    <Link to={subItem.link}>{subItem.text}</Link>
                                                                 </li>
                                                             ))}
                                                         </ul>
@@ -235,9 +237,9 @@ const Navbar = () => {
                     </div>
                     <div className="header-logo-wrap d-none d-lg-flex">
                         <div className="header-fixed-logo">
-                            <a href="/">
-                                <h5 className="mb-0">SKYIT CONSTRUCTION PVT LTD</h5>
-                            </a>
+                            <Link to="/">
+                                <img src="assets/images/logo/designstyle1.png" alt="Header Logo"/>
+                            </Link>
                         </div>
                     </div>
                 </div>
