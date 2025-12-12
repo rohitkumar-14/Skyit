@@ -83,7 +83,7 @@ const Contact = () => {
                         <div class="col-lg-6">
                             <h2 class="contact-form-title mb-3">Leave a Message</h2>
                             <p class="contact-form-desc mb-0">Top rated construction packages we pleasure ationally obtain simple and easy</p>
-                            <form id="contact-form" class="contact-form pt-10" action="https://whizthemes.com/mail-php/mamunur/oxybuild/oxybuild.php">
+                            <form id="contact-form" class="contact-form pt-10" action="#">
                                 <div class="group-input">
                                     <input type="text" name="con_name" id="con_name" placeholder="Your Name*" class="input-field me-6" />
                                     <input type="text" name="con_email" id="con_email" placeholder="Your Email*" class="input-field mt-6 mt-sm-0" />
