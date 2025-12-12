@@ -17,9 +17,7 @@ export default function Team() {
             </div>
             <div className="section-desc">
               <p className="font-size-20 mb-0">
-                Construction of itself, because it is pain, but <br />
-                because some proper style design occur in toil and pain pleasure
-                we have expert team
+                Meet the the experienced team of SKYIT, Experience and knowledge which brings the wisdom of field combining more than half a century
               </p>
             </div>
           </div>

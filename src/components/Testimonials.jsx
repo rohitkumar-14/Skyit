@@ -44,13 +44,11 @@ export default function Testimonials() {
             <div className="section-title-wrap-2">
               <div className="section-title border-0">
                 <span>TESTIMONIALS</span>
-                <h2 className="mb-7">Reviews from happy clients</h2>
+                <h2 className="mb-7">Hear from our clients</h2>
               </div>
               <div className="section-desc pb-4">
                 <p className="font-size-20 mb-0">
-                  Construction of itself, because it is pain some <br />
-                  some proper style design occur in toil and pain we have expert
-                  team some master
+                  Our design execution and work ethics speaks for itself, and our clients are here to let you know
                 </p>
               </div>
               
@@ -84,9 +82,9 @@ export default function Testimonials() {
                         <i className="quotation direction-right">”</i>
                       </p>
                       <div className="user-info">
-                        <div className="user-img">
+                        {/* <div className="user-img">
                           <img src={item.avatar} alt={item.name} />
-                        </div>
+                        </div> */}
                         <div className="user-content">
                           <h5 className="user-name text-primary mb-0">
                             {item.name}

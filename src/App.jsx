@@ -13,9 +13,11 @@ import PreDesign from "./pages/Services/PreDesignActivity";
 import ConstructionImplementation from "./pages/Services/ConstructionImplementation";
 import SpecializedConstruction from "./pages/Services/SpecializedConstruction";
 import Projects from './pages/Projects';
+import ScrollToTop from './components/ScrollToTop';
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
        <Routes>
         <Route path="/" element={<Home pageTitle="Home" />} />

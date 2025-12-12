@@ -27,7 +27,7 @@ const Contact = () => {
             </div>
         </div>
         <main class="main-content">
-            <div class="contact-area pt-140">
+            <div class="contact-area" style={{padding: "80px 0"}}>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
@@ -42,34 +42,28 @@ const Contact = () => {
                         </div>
                         <div class="col-lg-6 ps-lg-10 pt-10 pt-lg-0">
                             <div class="contact-content">
-                                <span class="sub-title mb-2">Do you have a project? let’s start</span>
+                                <span class="sub-title mb-2">SKYIT CONSTRUCTION PVT LTD</span>
                                 <h2 class="title mb-3">Contact with us</h2>
                                 <p class="short-desc mb-0">Construction of itself, because it is pain, but because some are proper style design occur in toil and pain pleasure we have a expert team some of the main features..
                                 </p>
                                 <div class="contact-info pt-5">
                                     <h3 class="title mb-0">Office Address</h3>
-                                    <p class="short-desc with-border mb-0">Melbourne’s GPO 434 Bourke St. Dhaka VIC 3074, Australia
+                                    <p class="short-desc with-border mb-0">New Delhi, Delhi, India
                                     </p>
                                 </div>
                                 <div class="contact-info pt-4">
                                     <h3 class="title mb-0">Contact Info</h3>
                                     <ul>
-                                        <li>
+                                        {/* <li>
                                             Phone:
                                             <Link to="tel://+096-12458-875-895">+12345 879 854</Link>
-                                        </li>
-                                        <li>
-                                            Fax:
-                                            <Link to="tel://+096-12547-895-874">(+096) 12547 895 874</Link>
-                                        </li>
+                                        </li> */}
+                                        
                                         <li>
                                             Email:
                                             <Link class="text-lowercase" to="mailto://info@example.com">info@example.com</Link>
                                         </li>
-                                        <li>
-                                            Web:
-                                            <Link class="text-lowercase" to="mailto://www.example.com">www.example.com</Link>
-                                        </li>
+                                        
                                     </ul>
                                 </div>
                             </div>
@@ -77,7 +71,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <div class="contact-form-area pt-130 pb-115">
+            {/* <div class="contact-form-area pt-130 pb-115">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
@@ -107,7 +101,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </main>
         </>
   )

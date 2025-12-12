@@ -20,7 +20,8 @@ const Footer = () => {
                                 <p className="short-desc font-size-16 mb-5">Construction of itself, because it is are <br/> but because some proper style design is occur in toil and pain pleasure</p>
                                 <div className="inquary">
                                     <h5 className="text-primary">For inquary</h5>
-                                    <Link to="tel://+12345-879-854">+12345 879 854</Link>
+                                    {/* <Link to="tel://+12345-879-854">+12345 879 854</Link> */}
+                                    <Link class="text-lowercase" to="mailto://info@example.com">info@example.com</Link>
                                 </div>
                             </div>
                         </div>
@@ -73,17 +74,17 @@ const Footer = () => {
                                 <h3 className="heading text-white mb-6">Contact Info</h3>
                                 <div className="widget-list-item text-hawkes-blue">
                                     <div className="widget-address pb-5">
-                                        <p className="mb-1">215 Central Road, North Street Central Park,
-                                            <span className="text-primary">New York, USA</span>
+                                        <p className="mb-1">New Delhi, Delhi, India
                                         </p>
-                                        <span>+12345 698 745 / +32145 852 785</span>
+                                        
+                                        {/* <span>+12345 698 745 / +32145 852 785</span> */}
                                     </div>
-                                    <div className="widget-address">
+                                    {/* <div className="widget-address">
                                         <p className="mb-1">75, Victoriya Street, New Town Park Road,
                                             <span className="text-primary">Sydney, Australia</span>
                                         </p>
                                         <span>+98745 258 102 / +98745 612 301</span>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
