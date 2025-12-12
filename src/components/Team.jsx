@@ -46,7 +46,7 @@ export default function Team() {
                       alt={member.name}
                     />
                     <ul className="add-action text-white">
-                      <li className="team-social-link-wrap">
+                      {/* <li className="team-social-link-wrap">
                         <Link to="#">
                           <i className="fa fa-share-alt"></i>
                         </Link>
@@ -67,7 +67,7 @@ export default function Team() {
                             </Link>
                           </li>
                         </ul>
-                      </li>
+                      </li> */}
                       <li className="mail-wrap">
                         <Link className="text-lowercase" to={`/team/${member.id}`}>
                           <i className="fa-solid fa-info fa-xs"></i>

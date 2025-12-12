@@ -32,7 +32,7 @@ const ProjectDetails = () => {
       <div className="project-detail-area py-140">
         <div className="container">
           <div className="row">
-            <div className="col-lg-9 pe-lg-9">
+            <div className="col-lg-12 pe-lg-12">
               <div className="project-detail-banner">
                 <Swiper
                   modules={[Navigation, Pagination, Autoplay]}
@@ -102,7 +102,7 @@ const ProjectDetails = () => {
               </div>
             </div>
 
-            <div className="col-lg-3 pt-8 pt-lg-0">
+            {/* <div className="col-lg-3 pt-8 pt-lg-0">
               <div className="sidebar-area">
                 <div className="sidebar-widget sidebar-categories text-white mb-6">
                   <h2 className="title mb-0">Project Info</h2>
@@ -132,7 +132,7 @@ const ProjectDetails = () => {
                   </div>
                 )}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
