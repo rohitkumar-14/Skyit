@@ -185,12 +185,13 @@ const Navbar = () => {
                                 <img src="assets/images/logo/designstyle1.png" alt="Header Logo"/>
                             </Link>
                         </div>
+                        <div>
                                 <button
                                     onClick={toggleMobileMenu}
                                     className="border-0 bg-transparent pl-0"
                                     aria-label="Toggle mobile menu">
                                     <i className="fa fa-navicon text-white fs-4"></i>
-                                </button>
+                                </button></div>
                             </div>
                         </div>
                     </div>
