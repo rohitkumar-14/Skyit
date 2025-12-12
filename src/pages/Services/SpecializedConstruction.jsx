@@ -40,7 +40,7 @@ const SpecializedConstructionServices = () => {
         <div className="container">
           <div className="row">
             {/* Left Content */}
-            <div className="col-lg-9">
+            <div className="col-lg-12">
               <div className="single-service pe-lg-7">
                 <div className="single-service-img mb-6">
                   <img
@@ -266,7 +266,7 @@ const SpecializedConstructionServices = () => {
             </div>
 
             {/* Sidebar */}
-            <div className="col-lg-3 pt-8 pt-lg-0">
+            {/* <div className="col-lg-3 pt-8 pt-lg-0">
               <div className="sidebar-area">
                 <div className="sidebar-widget sidebar-categories text-white mb-6">
                   <ul>
@@ -317,7 +317,7 @@ const SpecializedConstructionServices = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* End Sidebar */}
           </div>
         </div>

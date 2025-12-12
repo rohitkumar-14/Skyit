@@ -37,7 +37,7 @@ const ProjectManagement = () => {
       <div class="single-service-area py-140">
         <div class="container">
           <div class="row">
-            <div class="col-lg-9">
+            <div class="col-lg-12">
               <div class="single-service pe-lg-7">
                 <div class="single-service-img mb-6">
                   <img
@@ -110,7 +110,7 @@ const ProjectManagement = () => {
               </div>
             </div>
 
-            <div class="col-lg-3 pt-8 pt-lg-0">
+            {/* <div class="col-lg-3 pt-8 pt-lg-0">
               <div class="sidebar-area">
                 <div class="sidebar-widget sidebar-categories text-white mb-6">
                   <ul>
@@ -164,7 +164,7 @@ const ProjectManagement = () => {
                   </div>{" "}
                 </div>{" "}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
